@@ -1,16 +1,9 @@
-import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export const metadata = {
   title: "Create Next App",
@@ -20,9 +13,37 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
+        <Header />
         {children}
+        <Menu />
       </body>
     </html>
+  );
+}
+
+
+function Header() {
+  return (
+    <header id="Header">
+      <a href="/">
+        <h1>Fachschaft Geoinformatik Münster</h1>
+      </a>
+    </header>
+  )
+}
+
+
+function Menu() {
+  return (
+    <Navbar>
+      <Container>
+        <Navbar.Collapse>
+          <Nav>
+            <Nav.Link href="/">Home</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
