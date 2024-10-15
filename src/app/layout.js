@@ -1,9 +1,7 @@
-import "./globals.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import "./globals.css";
+import Menu from "@/components/navbar"
 
 export const metadata = {
   title: "Create Next App",
@@ -15,8 +13,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        {children}
-        <Menu />
+        <div id="Page">
+          <Menu />
+          {children}
+        </div>
       </body>
     </html>
   );
@@ -31,19 +31,4 @@ function Header() {
       </a>
     </header>
   )
-}
-
-
-function Menu() {
-  return (
-    <Navbar>
-      <Container>
-        <Navbar.Collapse>
-          <Nav>
-            <Nav.Link href="/">Home</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
 }

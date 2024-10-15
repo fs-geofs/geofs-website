@@ -45,3 +45,11 @@ body {
 #Header a {
   color: black;
 }
+
+#Page {
+  max-width: 840px;
+  background-color: lightcoral;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
