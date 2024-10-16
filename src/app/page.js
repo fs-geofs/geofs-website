@@ -62,7 +62,7 @@ function Praesidienste() {
       8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: ""
     },
     mittwoch: {
-      8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: "Sitzung\nAlle kommen!"
+      8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: "Sitzung!"
     },
     donnerstag: {
       8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: ""
@@ -110,11 +110,7 @@ const Praeasitime = ({dienste, tage, time}) => {
     <tr>
       <td>{time} - {time+1}</td>
       {
-        tage.map(tag => {
-          return(
-            <td>{dienste[tag][time]}</td>
-          )
-        })
+        tage.map(tag => <td>{dienste[tag][time]}</td>)
       }
     </tr>
   )
