@@ -35,18 +35,20 @@ function Termine() {
     <>
       <h2>Termine</h2>
       <table>
-        {
-          termine.map(
-            termin => {
-              return(
-                <tr>
-                  <td><strong>{termin.was}</strong></td>
-                  <td>{termin.von} - {termin.bis}</td>
-                </tr>
-              )
-            }
-          )
-        }
+        <tbody>
+          {
+            termine.map(
+              termin => {
+                return(
+                  <tr>
+                    <td><strong>{termin.was}</strong></td>
+                    <td>{termin.von} - {termin.bis}</td>
+                  </tr>
+                )
+              }
+            )
+          }
+        </tbody>
       </table>
     </>
   )
@@ -56,7 +58,7 @@ function Praesidienste() {
 
   const dienste = {
     montag: {
-      8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: ""
+      8: "Flo, Andi", 9: "Flo, Andi", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: ""
     },
     dienstag: {
       8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: ""
@@ -88,14 +90,16 @@ function Praesidienste() {
         Unseren Raum 024 findet ihr im Erdgeschoss des GEO1 – wenn man rein kommt auf der rechten Seite, direkt gegenüber vom Hörsaal! Die Sitzungen finden in Präsenz statt. Im Normalfall finden diese in Raum 242 des GEO1 statt, also im Seminarraum im 2. Stock. Kommt also gerne auch zur Sitzung vorbei, alternativ könnt ihr euch auf Discord dazu schalten, dazu müsstet ihr euch einmal rechtzeitig vor der Sitzung bei uns per Mail melden. Eine Anleitung wie ihr auf unseren Discord Server gelangt findet ihr hier. In den Semesterferien finden die Sitzungen nur unregelmäßig statt, schreibt uns im Zweifelsfall vorher eine Mail, damit wir euch informieren können, wann die nächste Sitzung stattfindet.
       </div>
       <table>
-        <tr>
-          <td></td>
-          <td>Montag</td>
-          <td>Dienstag</td>
-          <td>Mittwoch</td>
-          <td>Donnerstag</td>
-          <td>Freitag</td>
-        </tr>
+        <thead>
+          <tr>
+            <td></td>
+            <td>Montag</td>
+            <td>Dienstag</td>
+            <td>Mittwoch</td>
+            <td>Donnerstag</td>
+            <td>Freitag</td>
+          </tr>
+        </thead>
         {
           times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time}/>)
         }
@@ -107,11 +111,13 @@ function Praesidienste() {
 const Praeasitime = ({dienste, tage, time}) => {
 
   return(
-    <tr>
-      <td>{time} - {time+1}</td>
-      {
-        tage.map(tag => <td>{dienste[tag][time]}</td>)
-      }
-    </tr>
+    <tbody>
+      <tr>
+        <td>{time} - {time+1}</td>
+        {
+          tage.map(tag => <td>{dienste[tag][time]}</td>)
+        }
+      </tr>
+    </tbody>
   )
 }
