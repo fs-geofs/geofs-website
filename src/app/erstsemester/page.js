@@ -44,10 +44,10 @@ export default function() {
             <h2>Weitere Hinweise</h2>
             <ul>
                 <li>
-                    Nützliche Links, die euch gerade am Anfang des Studiums weiterhelfen
+                    <a href="/links">Nützliche Links</a>, die euch gerade am Anfang des Studiums weiterhelfen
                 </li>
                 <li>
-                    Habt ihr weitere Fragen? Dann schaut doch auch mal in unseren FAQ vorbei
+                    Habt ihr weitere Fragen? Dann schaut doch auch mal in unseren <a href="faq">FAQ</a> vorbei
                 </li>
                 <li>
                     Als Studierende an der Uni Münster seid ihr verpflichtet eure <a href="https://uni-muenster.de/permail">Uni-Emails </a> 
