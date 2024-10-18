@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
         <Header />
         <div id="Page">
           <Menu />
-          {children}
+          <div id="Content">
+            {children}
+          </div>
         </div>
       </body>
     </html>
