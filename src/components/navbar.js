@@ -27,8 +27,8 @@ export default function Menu() {
                         <NavDropdown.Item href="#action/3.3">FS Kursangebot</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Lernstoff</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Jahrgänge</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">FAQ</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Nützliche Links</NavDropdown.Item>
+                        <NavDropdown.Item href="/faq">FAQ</NavDropdown.Item>
+                        <NavDropdown.Item href="/links">Nützliche Links</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Corona</NavDropdown.Item>
                     </NavDropdown>
 
