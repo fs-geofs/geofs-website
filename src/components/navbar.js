@@ -10,15 +10,15 @@ export default function Menu() {
     return(
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-            <Navbar.Brand href="#home">Start</Navbar.Brand>
+            <Navbar.Brand href="/">Start</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
 
                 <Nav className="me-auto">
                     <NavDropdown title="Erstsemester" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Studienstart</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Ersti-Woche</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Ersti-Wochenende</NavDropdown.Item>
+                        <NavDropdown.Item href="/erstsemester">Studienstart</NavDropdown.Item>
+                        <NavDropdown.Item href="/erstiwoche">Ersti-Woche</NavDropdown.Item>
+                        <NavDropdown.Item href="/erstiwochenende">Ersti-Wochenende</NavDropdown.Item>
                     </NavDropdown>
 
                     <NavDropdown title="Studium" id="basic-nav-dropdown">
