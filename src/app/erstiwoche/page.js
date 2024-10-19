@@ -266,7 +266,7 @@ export default function () {
                 (manchmal auch -Woche genannt) ein!
                 Diese findet immer in der Woche vor Vorlesungsbeginn statt.
                 <br/>
-                <em>Nächset Ersti-Woche (Wintersemester {erstiwoche.year})</em> also vom 04.10.2022 – 07.10.2022.
+                <em>Nächset Ersti-Woche</em>  (Wintersemester {erstiwoche.year})also vom 04.10.2022 – 07.10.2022.
             </div>
             <div className={styles.Textblock}>
                 Wir werden euch alles wichtige rund ums Studium erklären, damit ihr gelassen und locker ins Studium starten könnt.
