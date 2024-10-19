@@ -43,6 +43,7 @@
   text-align: center;
 }
 
+.Table thead,
 .Table .category {
   font-weight:bolder;
 }

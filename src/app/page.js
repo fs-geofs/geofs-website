@@ -100,7 +100,7 @@ function Praesidienste() {
       </div>
       <table className={styles.Table}>
         <thead>
-          <tr className={styles.category}>
+          <tr>
             <td>Zeit</td>
             <td>Montag</td>
             <td>Dienstag</td>
