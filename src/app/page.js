@@ -109,9 +109,11 @@ function Praesidienste() {
             <td>Freitag</td>
           </tr>
         </thead>
+        <tbody>        
         {
           times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time}/>)
         }
+        </tbody>
       </table>
     </>
   )
@@ -120,13 +122,11 @@ function Praesidienste() {
 const Praeasitime = ({dienste, tage, time}) => {
 
   return(
-    <tbody>
       <tr>
         <td>{time} - {time+1}</td>
         {
           tage.map(tag => <td>{dienste[tag][time]}</td>)
         }
       </tr>
-    </tbody>
   )
 }
