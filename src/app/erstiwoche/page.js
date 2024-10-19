@@ -6,7 +6,188 @@ export default function () {
         year: "2024/25",
         start: "04.10.2024",
         end: "07.10.2024",
-        schedule: null,
+        schedule: {
+            montag: {
+                9: null,
+                10: {
+                    title: "Begrüßung",
+                    detail: "GEO1, HS"
+                },
+                11: {
+                    title: "Begrüßung",
+                    detail: "GEO1, HS"
+                },
+                12: null,
+                13: {
+                    title: "Mittagessen",
+                    detail: "Mensa am Ring oder Bistro Denkpause"
+                },
+                14: {
+                    title: "Einführung ins Studium",
+                    detail: "Lernatelier"
+                },
+                15: null,
+                16: null,
+                17: null,
+                18: null,
+                19: {
+                    title: "Spieleabend",
+                    detail: "GEO1"
+                },
+                20: {
+                    title: "Spieleabend",
+                    detail: "GEO1"
+                },
+                21: {
+                    title: "Spieleabend",
+                    detail: "GEO1"
+                }
+            },
+            dienstag: {
+                9: null,
+                10: {
+                    title: "Geo-Brunch",
+                    detail: "ab 10:30, Lichthof und Lernatelier GEO1"
+                },
+                11: {
+                    title: "Stadtrallye",
+                    detail: "ab 11:30, Start GEO1"
+                },
+                12: {
+                    title: "Stadtrallye",
+                    detail: null
+                },
+                13: {
+                    title: "Stadtrallye",
+                    detail: null
+                },
+                14: {
+                    title: "Stadtrallye",
+                    detail: null
+                },
+                15: {
+                    title: "Stadtrallye",
+                    detail: null
+                },
+                16: {
+                    title: "Stadtrallye",
+                    detail: null
+                },
+                17: {
+                    title: "Stadtrallye",
+                    detail: null
+                },
+                18: null,
+                19: {
+                    title: "Knepenabend",
+                    detail: "mit Geowissenschaften"
+                },
+                20: null,
+                21: null
+            },
+            mittwoch: {
+                9: null,
+                10: null,
+                11: {
+                    title: "GI-Fragestunde",
+                    detial: "GI Fachschaftsraum (GEO1)"
+                },
+                12: {
+                    title: "Mittagessen",
+                    detail: "Mensa am Ring oder Bistro Denkpause"
+                },
+                13: {
+                    title: "Geofs-Rallye",
+                    detail: "Start am Mathe-Gebäude"
+                },
+                14: null,
+                15: null,
+                16: null,
+                17: null,
+                18: null,
+                19: {
+                    title: "Filmabend",
+                    detail: "GEO1"
+                },
+                20: {
+                    title: "Filmabend",
+                    detail: null
+                },
+                21: {
+                    title: "Filmabend",
+                    detail: null
+                }
+            },
+            donnerstag: {
+                9: null,
+                10: null,
+                11: null,
+                12: {
+                    title: "Stadt-Exkursion",
+                    detail: "Start an Überwasserkirche"
+                },
+                13: {
+                    title: "xkursion",
+                    detail: null
+                },
+                14: {
+                    title: "Exkursion",
+                    detail: null
+                },
+                15: {
+                    title: "Exkursion",
+                    detail: null
+                },
+                16: null,
+                17: null,
+                18: null,
+                19: {
+                    title: "Kneipenrallye",
+                    detail: "Start am Domplatz"
+                },
+                20: {
+                    title: "Kneipenrallye",
+                    detail: null
+                },
+                21: {
+                    title: "Kneipenrallye",
+                    detail: null
+                }
+            },
+            freitag: {
+                9: null,
+                10: null,
+                11: {
+                    title: "Anmeldung ErstiWE",
+                    detail: "GEO1"
+                },
+                12: {
+                    title: "Verabschiedung",
+                    detail: "GEO1, HS"
+                },
+                13: {
+                    title: "Vorstellung Organisationen",
+                    detail: "GEO1, HS"
+                },
+                14: {
+                    title: "Vorstellung Organisationen",
+                    detail: null
+                },
+                15: null,
+                16: null,
+                17: null,
+                18: null,
+                19: null,
+                20: {
+                    title: "Gemeinsamer Kneipenabend",
+                    detail: "Shooter Stars"
+                },
+                21: {
+                    title: "Gemeinsamer Kneipenabend",
+                    detail: null
+                }
+            }
+        },
         locations: [
             {  
                 title: "GEO1",
@@ -105,7 +286,7 @@ export default function () {
                 oder Online Format abändern müssen. Checkt bitte regelmäßig diese Homepage, damit ihr wichtige Infos dazu nicht
                 verpasst!
             </div>
-            <Schedule />
+            <Schedule schedule={erstiwoche.schedule}/>
             <h2 className={styles.SmallHeading}>Adresskürzel, und was sich dahinter verbirgt</h2>
             {
                 erstiwoche.locations.map(
@@ -116,7 +297,14 @@ export default function () {
     )
 }
 
-const Schedule = () => {
+const Schedule = ({schedule}) => {
+
+    const tage = ["montag", "dienstag", "mittwoch", "donnerstag", "freitag"]
+    const times = []
+    for(var i = 9; i<=21; i++){
+        times.push(i)
+    }
+
     return (
         <table className={styles.Table}>
             <thead>
@@ -129,7 +317,38 @@ const Schedule = () => {
                     <td>Freitag</td>
                 </tr>
             </thead>
+            <tbody>
+                {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time}/>)}
+            </tbody>
         </table>
+    )
+}
+
+const Timeslot = ({schedule, tage, time}) => {
+    return (
+        <tr>
+            {
+                <>
+                    <td>{time}</td>
+                    {
+                        tage.map(
+                        tag => schedule[tag][time] ?
+                        <Timeslotentry title={schedule[tag][time].title} detail={schedule[tag][time].detail} /> :
+                        <td/>
+
+                    )}
+                </>
+            }
+        </tr>
+    )
+}
+
+const Timeslotentry = ({title, detail}) => {
+    return(
+        <td>
+            <strong>{title}</strong>
+            {detail ? <><br/>{detail}</> : ""}
+        </td>
     )
 }
 
