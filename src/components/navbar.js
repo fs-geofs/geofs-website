@@ -22,8 +22,8 @@ export default function Menu() {
                     </NavDropdown>
 
                     <NavDropdown title="Studium" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Studiengang</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Organisatorisches</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/studiengang">Studiengang</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/orga">Organisatorisches</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">FS Kursangebot</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Lernstoff</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Jahrgänge</NavDropdown.Item>
