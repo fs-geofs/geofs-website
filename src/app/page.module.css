@@ -20,7 +20,12 @@
 
 .Textblock {
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
+}
+
+.Textblock em {
+  font-weight: bold;
+  font-style: normal;
 }
 
 .Table {
