@@ -293,6 +293,9 @@ export default function () {
                     location => <Location title={location.title} erklaerung={location.erklaerung} detail={location.detail} osmlink={location.osmlink}/>
                 )
             }
+            <div className={styles.Textblock}>
+                Hinweis: Die Teilnahme an unserer Ersti-Woche ist nur für Studierende der Geoinformatik im ersten Semester möglich.
+            </div>
         </>
     )
 }
