@@ -18,6 +18,12 @@
   font-weight: bold;
 }
 
+.VerySmallHeading {
+  font-family: Bitter, Georgia, serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
 .Textblock {
   margin-top: 10px;
   margin-bottom: 24px;
