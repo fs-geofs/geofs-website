@@ -66,12 +66,12 @@ export default function () {
                     kannst du auf den entsprechenden Seiten des Institus für Geoinformatik herausfinden.
                 </li>
                 <li>
-                    Bei fast allen Fragen ist auch die <em>Fachschaft</em> ein guter Ansprechpartner.
+                    Bei fast allen Fragen ist auch die <em className={styles.bold}>Fachschaft</em> ein guter Ansprechpartner.
                     Ihr könnt uns per Mail erreichen oder auch während der <a href="/">Präsenzzeiten</a> vorbeischauen.
                     Unter <a href="/wp/kontakt">Kontakt</a> findet ihr weitere Informationen.
                 </li>
                 <li>
-                    Auch die <em>Uni Münster</em> bietet verschiedene Möglichkeitaen, sich beraten zu lassen.
+                    Auch die <em className={styles.bold}>Uni Münster</em> bietet verschiedene Möglichkeitaen, sich beraten zu lassen.
                     <ul>
                         <li>
                             Ein möglicher Ansprechpartner ist die <a href="https://www.uni-muenster.de/ZSB/"> zentrale Studienberatung</a>.
