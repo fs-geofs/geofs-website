@@ -16,20 +16,19 @@ export default function Menu() {
 
                 <Nav className="me-auto">
                     <NavDropdown title="Erstsemester" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/wp/erstsemester">Studienstart</NavDropdown.Item>
-                        <NavDropdown.Item href="/wp/erstiwoche">Ersti-Woche</NavDropdown.Item>
-                        <NavDropdown.Item href="/wp/erstiwochenende">Ersti-Wochenende</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/erstsemester/studienstart">Studienstart</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/erstsemester/erstiwoche">Ersti-Woche</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/erstsemester/erstiwochenende">Ersti-Wochenende</NavDropdown.Item>
                     </NavDropdown>
 
                     <NavDropdown title="Studium" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/wp/studiengang">Studiengang</NavDropdown.Item>
-                        <NavDropdown.Item href="/wp/orga">Organisatorisches</NavDropdown.Item>
-                        <NavDropdown.Item href="/wp/kurse">FS Kursangebot</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Lernstoff</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Jahrgänge</NavDropdown.Item>
-                        <NavDropdown.Item href="/wp/faq">FAQ</NavDropdown.Item>
-                        <NavDropdown.Item href="/wp/links">Nützliche Links</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Corona</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/studium/studiengang">Studiengang</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/studium/orga">Organisatorisches</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/studium/kurse">FS Kursangebot</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/studium/lernstoff">Lernstoff</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/studium/jahrgaenge">Jahrgänge</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/studium/faq">FAQ</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/studium/links">Nützliche Links</NavDropdown.Item>
                     </NavDropdown>
 
                     <NavDropdown title="Fachschaft" id="basic-nav-dropdown">
