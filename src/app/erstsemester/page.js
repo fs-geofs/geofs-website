@@ -195,7 +195,7 @@ function Stundenplan() {
 const Timeslot = ({schedule, tage, time}) => {
     return(
         <tr>
-            <td>{time} - {time+2}</td>
+            <td>{time}-{time+2}</td>
             {
                 tage.map(
                     tag => {
