@@ -16,9 +16,9 @@ export default function Menu() {
 
                 <Nav className="me-auto">
                     <NavDropdown title="Erstsemester" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="/erstsemester">Studienstart</NavDropdown.Item>
-                        <NavDropdown.Item href="/erstiwoche">Ersti-Woche</NavDropdown.Item>
-                        <NavDropdown.Item href="/erstiwochenende">Ersti-Wochenende</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/erstsemester">Studienstart</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/erstiwoche">Ersti-Woche</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/erstiwochenende">Ersti-Wochenende</NavDropdown.Item>
                     </NavDropdown>
 
                     <NavDropdown title="Studium" id="basic-nav-dropdown">
@@ -27,8 +27,8 @@ export default function Menu() {
                         <NavDropdown.Item href="#action/3.3">FS Kursangebot</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Lernstoff</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Jahrgänge</NavDropdown.Item>
-                        <NavDropdown.Item href="/faq">FAQ</NavDropdown.Item>
-                        <NavDropdown.Item href="/links">Nützliche Links</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/faq">FAQ</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/links">Nützliche Links</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Corona</NavDropdown.Item>
                     </NavDropdown>
 
