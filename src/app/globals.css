@@ -26,7 +26,7 @@ body {
 
 
 #Header {
-  background: url("/geofs_header2.png");
+  background: url("/website-img/geofs_header2.png");
   background-size: 1600px auto;
   min-height: 230px;
   display: flex; /* enable flexbox */
