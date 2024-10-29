@@ -32,22 +32,16 @@ export default function Menu() {
                     </NavDropdown>
 
                     <NavDropdown title="Fachschaft" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Das sind wir</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Kontakt</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Sitzungsprotokolle</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.1">HoPo / Komissionen</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.1">Satzung / Geschäftsordnung</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/fachschaft/das-sind-wir">Das sind wir</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/fachschaft/kontakt">Kontakt</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/fachschaft/protokolle">Sitzungsprotokolle</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/fachschaft/hopo-komissionen">HoPo / Komissionen</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/fachschaft/satzung-geschaeftsordnung">Satzung / Geschäftsordnung</NavDropdown.Item>
                     </NavDropdown>
-
-                    <NavDropdown title="English" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    </NavDropdown>
-
+                    <Nav.Link href="/wp/english">English</Nav.Link>
                     <NavDropdown title="Aktuelles" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">News</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Jobs & Co</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/aktuelles/news">News</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/aktuelles/jobs-und-co">Jobs & Co</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
