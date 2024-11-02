@@ -11,6 +11,7 @@ export default function Home() {
       </div>
       <Termine />
       <Praesidienste />
+      <Newsletter />
     </>
   );
 }
@@ -127,5 +128,17 @@ const Praeasitime = ({dienste, tage, time}) => {
           tage.map(tag => <td>{dienste[tag][time]}</td>)
         }
       </tr>
+  )
+}
+
+const Newsletter = () => {
+  return (
+    <>
+      <h2 className={styles.SmallHeading}>Newsletter</h2>
+      <div className={styles.Textblock}>
+        Um euch regelmäßig über wichtige Neuigkeiten und Termine zu informieren, haben wir einen E-Mail-Newsletter
+        eingerichtet. <a href="/wp/fachschaft/newsletter">Hier</a> findet ihr alle Infos zur Anmeldung (und Abmeldung).
+      </div>
+    </>
   )
 }
