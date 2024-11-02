@@ -6,7 +6,7 @@ export default function () {
         hin: "25.10.2024, 09:30",
         rueck: "27.10.2024",
         kosten: "50€",
-        url: "https://giv-geofs.uni-muenster.de/erstiwe"
+        url: "/erstiwe"
     }
 
     return (
@@ -22,7 +22,7 @@ export default function () {
                 <strong>Hinfahrt</strong>: {erstiwochenende.hin}<br/>
                 <strong>Rückfahrt</strong>: {erstiwochenende.rueck}<br/>
                 <strong>Kostenbeitrag</strong>: {erstiwochenende.kosten}<br/>
-                <strong>Anmeldung</strong>: Online über <a href={erstiwochenende.url}>{erstiwochenende.url}</a> (Anwesenheit in er Ersti-Woche erforderlich)
+                <strong>Anmeldung</strong>: Online <a href={erstiwochenende.url}>hier</a> (Anwesenheit in er Ersti-Woche erforderlich)
             </div>
 
             <h2 className={styles.SmallHeading}>Allgemeine Hinweise</h2>
