@@ -37,6 +37,7 @@ export default function Menu() {
                         <NavDropdown.Item href="/wp/fachschaft/protokolle">Sitzungsprotokolle</NavDropdown.Item>
                         <NavDropdown.Item href="/wp/fachschaft/hopo-komissionen">HoPo / Komissionen</NavDropdown.Item>
                         <NavDropdown.Item href="/wp/fachschaft/satzung-geschaeftsordnung">Satzung / Geschäftsordnung</NavDropdown.Item>
+                        <NavDropdown.Item href="/wp/fachschaft/newsletter">Newsletter</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/wp/english">English</Nav.Link>
                     <NavDropdown title="Aktuelles" id="basic-nav-dropdown">
