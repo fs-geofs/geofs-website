@@ -7,8 +7,8 @@ export default function() {
             <h2 className={styles.SmallHeading}>Einstig ins Studium</h2>
             <div className={styles.Textblock}>
                 Als Fachschaft möchten wir euch bei eurem Einstieg in das Studierenden-Leben begleiten.
-                Dafür bieten wir euch eine <a href="/erstiwoche">Ersti-Woche</a> (manchmal auch O-Woche genannt)
-                vor der ersten Vorlesungswoche und ein <a href="/erstiwochenende">Ersti-Wochenende</a> an.
+                Dafür bieten wir euch eine <a href="/wp/erstsemester/erstiwoche">Ersti-Woche</a> (manchmal auch O-Woche genannt)
+                vor der ersten Vorlesungswoche und ein <a href="/wp/erstsemester/erstiwochenende">Ersti-Wochenende</a> an.
                 Wir würden uns sehr freuen, viele von euch dort zu treffen :-).
             </div>
             <div className="Textblock">
@@ -50,10 +50,10 @@ export default function() {
             <h2 className={styles.SmallHeading}>Weitere Hinweise</h2>
             <ul>
                 <li>
-                    <a href="/links">Nützliche Links</a>, die euch gerade am Anfang des Studiums weiterhelfen
+                    <a href="/wp/studium/links">Nützliche Links</a>, die euch gerade am Anfang des Studiums weiterhelfen
                 </li>
                 <li>
-                    Habt ihr weitere Fragen? Dann schaut doch auch mal in unseren <a href="faq">FAQ</a> vorbei
+                    Habt ihr weitere Fragen? Dann schaut doch auch mal in unseren <a href="/wp/studium/faq">FAQ</a> vorbei
                 </li>
                 <li>
                     Als Studierende an der Uni Münster seid ihr verpflichtet eure <a href="https://uni-muenster.de/permail">Uni-Emails </a> 
@@ -64,7 +64,7 @@ export default function() {
                     als offiziellen Kommunikaitonskanal.
                 </li>
                 <li>
-                    Informationen zu Fristen und Terminen (zum Beispiel zu Semesterferien) an der Uni Müsnter erhaltet ihr
+                    Informationen zu Fristen und Terminen (zum Beispiel zu Semesterferien) an der Uni Münster erhaltet ihr
                     <a href="https://www.uni-muenster.de/studium/orga/termine.html"> hier</a>
                 </li>
             </ul>
