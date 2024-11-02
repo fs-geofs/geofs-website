@@ -31,7 +31,7 @@ function Termine() {
     }
   ]
 
-  return(
+  return (
     <>
       <h2 className={styles.SmallHeading}>Termine</h2>
       <table className={styles.Table}>
@@ -39,7 +39,7 @@ function Termine() {
           {
             termine.map(
               termin => {
-                return(
+                return (
                   <tr>
                     <td className={styles.category}>{termin.was}</td>
                     <td>{termin.von} - {termin.bis}</td>
@@ -76,15 +76,15 @@ function Praesidienste() {
 
   const tage = ["montag", "dienstag", "mittwoch", "donnerstag", "freitag"]
   const times = []
-  for(var i = 8; i<=18; i++){
+  for (var i = 8; i <= 18; i++) {
     times.push(i)
   }
 
-  return(
+  return (
     <>
       <h2 className={styles.SmallHeading}>Präsenzzeiten im Fachschaftsraum</h2>
       <div className={styles.Textblock}>
-          <div className={styles.Textblock}>
+        <div className={styles.Textblock}>
           Während der Vorlesungszeit sind zu diesen Zeiten Fachschaftler und Fachschaftlerinnen im Raum anzutreffen,
           die euch gerne Fragen beantworten. In den Semesterferien sind wir nach Vereinbarung vor Ort und stets per Mail
           und Facebook/Instagram erreichbar.
@@ -109,25 +109,25 @@ function Praesidienste() {
             <td>Freitag</td>
           </tr>
         </thead>
-        <tbody>        
-        {
-          times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time}/>)
-        }
+        <tbody>
+          {
+            times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time} />)
+          }
         </tbody>
       </table>
     </>
   )
 }
 
-const Praeasitime = ({dienste, tage, time}) => {
+const Praeasitime = ({ dienste, tage, time }) => {
 
-  return(
-      <tr>
-        <td>{time} - {time+1}</td>
-        {
-          tage.map(tag => <td>{dienste[tag][time]}</td>)
-        }
-      </tr>
+  return (
+    <tr>
+      <td>{time} - {time + 1}</td>
+      {
+        tage.map(tag => <td>{dienste[tag][time]}</td>)
+      }
+    </tr>
   )
 }
 
