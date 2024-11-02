@@ -174,7 +174,7 @@ export default function () {
                 13. Wie kann ich die Exch- und die S-Platte (ZIVDAV) zu Hause einbinden?
             </h3>
             <div className={styles.Textblock}>
-                <a href="https://geofs.uni-muenster.de/wp/studium/nuetzliche-links/">Hier</a> findet ihr Links zu Uni-Seiten,
+                <a href="/wp/studium/links/">Hier</a> findet ihr Links zu Uni-Seiten,
                 die eine Anleitung für diese Dinge bieten.
             </div>
         </>

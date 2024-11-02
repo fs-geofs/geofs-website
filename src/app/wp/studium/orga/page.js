@@ -68,7 +68,7 @@ export default function () {
                 <li>
                     Bei fast allen Fragen ist auch die <em className={styles.bold}>Fachschaft</em> ein guter Ansprechpartner.
                     Ihr könnt uns per Mail erreichen oder auch während der <a href="/">Präsenzzeiten</a> vorbeischauen.
-                    Unter <a href="/wp/kontakt">Kontakt</a> findet ihr weitere Informationen.
+                    Unter <a href="/wp/fachschaft/kontakt">Kontakt</a> findet ihr weitere Informationen.
                 </li>
                 <li>
                     Auch die <em className={styles.bold}>Uni Münster</em> bietet verschiedene Möglichkeitaen, sich beraten zu lassen.
