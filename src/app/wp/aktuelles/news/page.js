@@ -5,14 +5,14 @@ export default async function Site() {
     
     const blog_entries = []
 
-    // call API
+    // call API to fetch news articles
     const resp = await fetch(
         "http://localhost:3000/api/news",
         {method: "GET", cache: "no-store"}
     )
     
     if (resp.status !== 200){
-        blog_entries.push("Error")
+        blog_entries.push("Error fetching news articles!")
     } else {
         const entries = await resp.json()
         entries.map(entry => {
