@@ -1,32 +1,64 @@
+# Website der Fachschaft Geoinformatik Münster
 
-## Getting Started
+We are no longer allowed to use wordpress. Therefore, I built this site using next.js.
+
+## Dynamic Content
+
+Even though it is built using next.js, there is a way to include content dynamically, as there is a way to control certain aspects of the site dynamically.
+
+- Blogposts ("news") can be added by adding a simple html file to `./content/gi/news-articles`
+- Job Postings can be added by adding a simple html file to `./content/gi/jobs`
+- Other dynamic stuff is controlled via JSON in `./content/gi/page-content`
+
+## Development
+
+This app uses next.js framework and App-Router. Routes inside the side are given by the directory structure within `./src/app`. Page content is then defined inside the `page.js` file.
 
 First, clone this repository.
-```
+
+```bash
 git clone 
 ```
 
 Next, install dependencies
-```
+
+```bash
 npm install
 ```
 
-Lastly, run the development server:
+Then, run the development server.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Changes to the site are then visible in real-time in the browser ander `localhost:3000`
 
-You can start editing the page by modifying `src/app/page.js`. The page auto-updates as you edit the file.
+## Testing
 
+Test what has been changed by creating a production build
+
+```bash
+npm run build
+```
+
+If your code has any Errors or warnings, they will then be shown in the console. Fix them in the Source files and run this command again, until the build passes without Errors or Warnings.
+
+Then, start a production server to test your deployment build:
+
+```bash
+npm run start
+```
+
+If everything is okay, you can Deploy.
+
+## Deployment
+
+This app is best deployed via Docker. A Dockerfile is provided, as well as a prebuilt package.
+
+## Pipeline
+
+Pushes and Merges on Main will automatically create a new Package. (TODO)
 
 ## Learn More
 
