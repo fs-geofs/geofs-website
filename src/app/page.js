@@ -27,7 +27,7 @@ async function Termine() {
   var termine = {}
 
   try {
-    const resp = await fetch(`${BACKEND_BASE}/termine`, {cache: "no-store" })
+    const resp = await fetch(`${BACKEND_BASE}/termine`, { cache: "no-store" })
     if (resp.status != 200) {
       throw new Error()
     } else {
