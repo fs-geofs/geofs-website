@@ -39,12 +39,10 @@ Changes to the site are then visible in real-time in the browser ander `localhos
 Test what has been changed by creating a production build
 
 ```bash
-npm run build
+npm run lint
 ```
 
-If your code has any Errors or warnings, they will then be shown in the console. Fix them in the Source files and run this command again, until the build passes without Errors or Warnings.
-
-Then, start a production server to test your deployment build:
+If your code has any Errors or warnings, they will then be shown in the console. Fix them in the Source files and run this command again, until the process passes without Errors or Warnings.
 
 ```bash
 npm run start
