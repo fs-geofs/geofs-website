@@ -87,7 +87,7 @@ const Timeslot = ({ schedule, tage, time }) => {
                         tage.map(
                             tag => schedule[tag][time] ?
                                 <Timeslotentry title={schedule[tag][time].title} detail={schedule[tag][time].detail} key={tag}/> :
-                                <td />
+                                <td key={tag}/>
 
                         )}
                 </>
