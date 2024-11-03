@@ -7,7 +7,7 @@
   margin-bottom: 20px;
   font-family: Bitter, Georgia, serif;
   font-weight: normal;
-  font-size: 48px;
+  font-size: 34px;
   font-weight: normal;
 }
 
@@ -52,4 +52,15 @@
 .Table thead,
 .Table .category {
   font-weight:bolder;
+}
+
+/*
+only applies to screens wider than 700px
+Possible to override values set above.
+Here, special values are set for display on large wide (computer) screens
+*/
+@media screen and (min-width: 700px) {
+  .BigHeading {
+    font-size: 48px;
+  }
 }

@@ -34,7 +34,7 @@ body {
 }
 
 #Header h1 {
-  font-size: 58px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 1;
   padding: 58px 0 10px;
@@ -56,4 +56,22 @@ body {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*
+only applies to screens wider than 700px
+Possible to override values set above.
+Here, special values are set for display on large wide (computer) screens
+*/
+@media screen and (min-width: 700px) {
+  #Header h1 {
+    font-size: 58px;
+  }
+
+  #Content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
