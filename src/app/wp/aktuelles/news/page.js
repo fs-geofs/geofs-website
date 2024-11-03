@@ -3,13 +3,15 @@ import localStyle from "./page.module.css"
 
 import DOMPurify from "isomorphic-dompurify"
 
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
+
 export default async function Site() {
 
     const blog_entries = []
 
     // call API to fetch news articles
     const resp = await fetch(
-        "http://localhost:3000/api/news",
+        `${BACKEND_BASE}/news`,
         { method: "GET", cache: "no-store" }
     )
 

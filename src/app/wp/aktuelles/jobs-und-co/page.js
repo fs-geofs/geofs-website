@@ -1,6 +1,8 @@
 import styles from "@/app/page.module.css"
 import localStyle from "./page.module.css"
 
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
+
 import DOMPurify from "isomorphic-dompurify"
 
 export default async function Site() {
@@ -9,7 +11,7 @@ export default async function Site() {
 
     // call API to fetch news articles
     const resp = await fetch(
-        "http://localhost:3000/api/jobs",
+        `${BACKEND_BASE}/joblistings`,
         { method: "GET", cache: "no-store" }
     )
 
