@@ -26,6 +26,7 @@ export async function GET(request) {
     //add to response data dictionary
     response_data.push({
       id: filename,
+      date: filename.split("_")[0],
       content: cleanHtml
     })
   }
