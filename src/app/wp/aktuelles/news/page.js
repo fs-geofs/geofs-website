@@ -21,7 +21,12 @@ export default async function Site() {
                 .replaceAll("<h2>", `<h1 class=${styles.SmallHeading}>`) // apply h2 formatting
                 .replaceAll("<h3>", `<h1 class=${styles.VerySmallHeading}>`) //apply h3 formatting
                 .replaceAll("<div>", `<div class=${styles.Textblock}>`) // apply Textbox formatting to divs
-            blog_entries.push(<div className={localStyle.Blogpost} dangerouslySetInnerHTML={{__html: html_to_insert}} key={entry.id}/>)}
+            blog_entries.push(
+                <div className={localStyle.Blogpost} key={entry.id}>
+                    <h4>{entry.date}</h4>
+                    <div dangerouslySetInnerHTML={{__html: html_to_insert}}/>
+                </div>
+            )}
         )
     }
 
