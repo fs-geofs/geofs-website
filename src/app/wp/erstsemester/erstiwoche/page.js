@@ -13,7 +13,7 @@ export default function () {
                 Wir laden alle Geoinformatik-Erstsemesterstudierende sehr herzlich zu unserer Ersti-Woche
                 (manchmal auch -Woche genannt) ein!
                 Diese findet immer in der Woche vor Vorlesungsbeginn statt.
-                <div/>
+                <div />
                 <div className={styles.Textblock}>
                     <em>Nächset Ersti-Woche</em>  (Wintersemester {erstiwoche.year}) also vom {erstiwoche.start} – {erstiwoche.end}.
                 </div>
@@ -36,11 +36,11 @@ export default function () {
                 oder Online Format abändern müssen. Checkt bitte regelmäßig diese Homepage, damit ihr wichtige Infos dazu nicht
                 verpasst!
             </div>
-            <Schedule schedule={erstiwoche.schedule}/>
+            <Schedule schedule={erstiwoche.schedule} />
             <h2 className={styles.SmallHeading}>Adresskürzel, und was sich dahinter verbirgt</h2>
             {
                 erstiwoche.locations.map(
-                    location => <Location title={location.title} erklaerung={location.erklaerung} detail={location.detail} osmlink={location.osmlink}/>
+                    location => <Location title={location.title} erklaerung={location.erklaerung} detail={location.detail} osmlink={location.osmlink} />
                 )
             }
             <div className={styles.Textblock}>
@@ -50,11 +50,11 @@ export default function () {
     )
 }
 
-const Schedule = ({schedule}) => {
+const Schedule = ({ schedule }) => {
 
     const tage = ["montag", "dienstag", "mittwoch", "donnerstag", "freitag"]
     const times = []
-    for(var i = 9; i<=21; i++){
+    for (var i = 9; i <= 21; i++) {
         times.push(i)
     }
 
@@ -71,13 +71,13 @@ const Schedule = ({schedule}) => {
                 </tr>
             </thead>
             <tbody>
-                {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time}/>)}
+                {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time} />)}
             </tbody>
         </table>
     )
 }
 
-const Timeslot = ({schedule, tage, time}) => {
+const Timeslot = ({ schedule, tage, time }) => {
     return (
         <tr>
             {
@@ -85,34 +85,34 @@ const Timeslot = ({schedule, tage, time}) => {
                     <td>{time}</td>
                     {
                         tage.map(
-                        tag => schedule[tag][time] ?
-                        <Timeslotentry title={schedule[tag][time].title} detail={schedule[tag][time].detail} /> :
-                        <td/>
+                            tag => schedule[tag][time] ?
+                                <Timeslotentry title={schedule[tag][time].title} detail={schedule[tag][time].detail} /> :
+                                <td />
 
-                    )}
+                        )}
                 </>
             }
         </tr>
     )
 }
 
-const Timeslotentry = ({title, detail}) => {
-    return(
+const Timeslotentry = ({ title, detail }) => {
+    return (
         <td>
             <strong>{title}</strong>
-            {detail ? <><br/>{detail}</> : ""}
+            {detail ? <><br />{detail}</> : ""}
         </td>
     )
 }
 
-const Location = ({title, erklaerung, detail, osmlink}) => {
-    return(
+const Location = ({ title, erklaerung, detail, osmlink }) => {
+    return (
         <>
             <strong>{title}: </strong>
             {erklaerung}
-            {osmlink ? <a href={osmlink}> (Karte)</a>: ""}
-            {detail ? <><br/>{detail}</> : ""}
-            <br/>
+            {osmlink ? <a href={osmlink}> (Karte)</a> : ""}
+            {detail ? <><br />{detail}</> : ""}
+            <br />
         </>
     )
 }
