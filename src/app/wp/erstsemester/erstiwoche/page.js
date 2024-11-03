@@ -2,7 +2,7 @@ import styles from "@/app/page.module.css"
 
 import erstiwoche from "@/../content/gi/page-content/erstsemester/erstiwoche.json"
 
-export default function () {
+export default function Content () {
 
     // erstiwoche variable wird oben aus JSON importiert
 
