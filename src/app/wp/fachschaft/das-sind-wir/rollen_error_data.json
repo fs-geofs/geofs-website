@@ -1,0 +1,17 @@
+{
+    "_comment": "Mock error data, in case we cannot reach the api",
+    "wahldatum": "UNKNOWN",
+    "protokoll": "UNKNWON.URL",
+    "roles": [
+        {
+            "role": "UNKNWON",
+            "names": "UNKNWON UNKNWON",
+            "description": "Error fetching data form API"
+        },
+        {
+            "role": "UNKNWON",
+            "names": "UNKNWON UNKNWON",
+            "description": "Error fetching data form API"
+        }
+    ]
+}
