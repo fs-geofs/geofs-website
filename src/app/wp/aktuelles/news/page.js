@@ -1,26 +1,30 @@
 import styles from "@/app/page.module.css"
 import localStyle from "./page.module.css"
 
+import DOMPurify from "isomorphic-dompurify"
+
 export default async function Site() {
-    
+
     const blog_entries = []
 
     // call API to fetch news articles
     const resp = await fetch(
         "http://localhost:3000/api/news",
-        {method: "GET", cache: "no-store"}
+        { method: "GET", cache: "no-store" }
     )
-    
-    if (resp.status !== 200){
+
+    if (resp.status !== 200) {
         blog_entries.push("Error fetching news articles!")
     } else {
         const entries = await resp.json()
         entries.map(entry => {
-            const html_to_insert = entry.content
-                .replaceAll("<h1>", `<h1 class=${styles.BigHeading}>`)  // apply h1 formatting
-                .replaceAll("<h2>", `<h1 class=${styles.SmallHeading}>`) // apply h2 formatting
-                .replaceAll("<h3>", `<h1 class=${styles.VerySmallHeading}>`) //apply h3 formatting
-                .replaceAll("<div>", `<div class=${styles.Textblock}>`) // apply Textbox formatting to divs
+            const html_to_insert = DOMPurify.sanitize(
+                entry.content
+                    .replaceAll("<h1>", `<h1 class=${styles.BigHeading}>`)  // apply h1 formatting
+                    .replaceAll("<h2>", `<h1 class=${styles.SmallHeading}>`) // apply h2 formatting
+                    .replaceAll("<h3>", `<h1 class=${styles.VerySmallHeading}>`) //apply h3 formatting
+                    .replaceAll("<div>", `<div class=${styles.Textblock}>`) // apply Textbox formatting to divs
+            )
             blog_entries.push(
                 <div className={localStyle.Blogpost} key={entry.id}>
                     <h4>{
@@ -29,10 +33,11 @@ export default async function Site() {
                             .split("-")
                             .reverse()
                             .join(".")
-                        }</h4>
-                    <div dangerouslySetInnerHTML={{__html: html_to_insert}}/>
+                    }</h4>
+                    <div dangerouslySetInnerHTML={{ __html: html_to_insert }} />
                 </div>
-            )}
+            )
+        }
         )
     }
 
