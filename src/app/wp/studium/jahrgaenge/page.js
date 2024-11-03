@@ -1,7 +1,7 @@
 import styles from "@/app/page.module.css"
 import jahrgaenge from "@/../content/gi/page-content/studium/jahrgaenge.json"
 
-export default function Content () {
+export default function Content() {
 
     // jahrgaenge variable wird oben importiert
 
@@ -37,8 +37,8 @@ export default function Content () {
     )
 }
 
-const Tableentry = ({jahr, name}) => {
-    return(
+const Tableentry = ({ jahr, name }) => {
+    return (
         <tr>
             <td>{jahr}</td>
             <td>{name}</td>
