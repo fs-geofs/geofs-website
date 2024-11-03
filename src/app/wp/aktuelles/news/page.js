@@ -23,7 +23,13 @@ export default async function Site() {
                 .replaceAll("<div>", `<div class=${styles.Textblock}>`) // apply Textbox formatting to divs
             blog_entries.push(
                 <div className={localStyle.Blogpost} key={entry.id}>
-                    <h4>{entry.date}</h4>
+                    <h4>{
+                        // reformat date string
+                        entry.date
+                            .split("-")
+                            .reverse()
+                            .join(".")
+                        }</h4>
                     <div dangerouslySetInnerHTML={{__html: html_to_insert}}/>
                 </div>
             )}
