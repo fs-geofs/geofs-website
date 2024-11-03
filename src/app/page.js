@@ -1,5 +1,8 @@
 import styles from "./page.module.css";
 
+import termine from "@/../content/gi/page-content/start/termine.json"
+import dienste from "@/../content/gi/page-content/start/praesidienste.json"
+
 export default function Home() {
   return (
     <>
@@ -18,18 +21,7 @@ export default function Home() {
 
 function Termine() {
 
-  const termine = [
-    {
-      was: "Vorlesungsfreie Zeit",
-      von: "06.02.2023",
-      bis: "31.03.2023"
-    },
-    {
-      was: "Vorlesungszeit SoSe 2023",
-      von: "03.04.2023",
-      bis: "14.07.2023"
-    }
-  ]
+  // termine variable is importet on top
 
   return (
     <>
@@ -56,23 +48,7 @@ function Termine() {
 
 function Praesidienste() {
 
-  const dienste = {
-    montag: {
-      8: "Flo, Andi", 9: "Flo, Andi", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: ""
-    },
-    dienstag: {
-      8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: ""
-    },
-    mittwoch: {
-      8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: "Sitzung!"
-    },
-    donnerstag: {
-      8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: ""
-    },
-    freitag: {
-      8: "", 9: "", 10: "", 11: "", 12: "", 13: "", 14: "", 15: "", 16: "", 17: "", 18: ""
-    }
-  }
+  // dienste variable is importet on top
 
   const tage = ["montag", "dienstag", "mittwoch", "donnerstag", "freitag"]
   const times = []
