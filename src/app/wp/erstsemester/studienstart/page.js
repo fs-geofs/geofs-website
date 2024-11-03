@@ -1,6 +1,9 @@
 import styles from "@/app/page.module.css"
 
-export default function() {
+import schedule from "@/../content/gi/page-content/erstsemester/stundenplan.json"
+
+
+export default function Content() {
     return(
         <>
             <h1 className={styles.BigHeading}>Hallo, liebe Erstsemester!</h1>
@@ -74,96 +77,7 @@ export default function() {
 
 function Stundenplan() {
 
-    const schedule = {
-        montag: {
-            8: null,
-            10: null,
-            12: {
-                title: "VL Analysis für Informatiker",
-                location: "M1",
-                address: "Einsteinstr. 64",
-                qisserverlink: "https://studium.uni-muenster.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=418177&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung",
-                learnweblink: "https://sso.uni-muenster.de/LearnWeb/learnweb2/enrol/index.php?id=79885"
-            },
-            14: {
-                title: "VL Informatik 1",
-                location: "M1",
-                address: "Einstreinst. 64",
-                qisserverlink: "",
-                learnweblink: ""
-            },
-            16: null,
-            18: {
-                title: "GIS-Grundkurs",
-                location: "GEO1, StudLab-125, 126, 130",
-                address: "Heisenbergstr. 2",
-                qisserverlink: "",
-                learnweblink: ""
-            }
-        },
-        dienstag: {
-            8: null,
-            10: {
-                title: "VL Einführung in die Geoinformatik",
-                location: "AP, HS",
-                address: "Corrensstr. 4",
-                qisserverlink: "",
-                learnweblink: ""
-            },
-            12: null,
-            14: null,
-            16: null,
-            18: null
-        },
-        mittwoch: {
-            8: null,
-            10: null,
-            12: null,
-            14: {
-                title: "Ü Mathe Ergänzungskurs",
-                location: "GEO1-255",
-                address: "Heisenbergstr. 2",
-                qisserverlink: "",
-                learnweblink: ""
-            },
-            16: null,
-            18: null
-        },
-        donnerstag: {
-            8: null,
-            10: null,
-            12: {
-                title: "VL Analysis für Informatiker",
-                location: "M1",
-                address: "Einsteinstr. 64",
-                qisserverlink: "",
-                learnweblink: ""
-            },
-            14: {
-                title: "VL Informatik 1",
-                location: "M1",
-                address: "Einsteinstr. 64",
-                qisserverlink: "",
-                learnweblink: ""
-            },
-            16: {
-                title: "Einführung in Java",
-                location: "M1",
-                address: "Einsteinstr. 64",
-                qisserverlink: "",
-                learnweblink: ""
-            },
-            18: null
-        },
-        freitag: {
-            8: null,
-            10: null,
-            12: null,
-            14: null,
-            16: null,
-            18: null
-        }
-    }
+    // scheule variable wir oben importiert
 
     const tage = ["montag", "dienstag", "mittwoch", "donnerstag", "freitag"]
     const times = []
@@ -185,7 +99,7 @@ function Stundenplan() {
                     </tr>
                 </thead>
                 <tbody>
-                    {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time}/> )}
+                    {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time} key={time}/> )}
                 </tbody>
             </table>
         </>
@@ -200,7 +114,7 @@ const Timeslot = ({schedule, tage, time}) => {
                 tage.map(
                     tag => {
                         return(
-                            <td>
+                            <td key={tag}>
                                 {
                                     schedule[tag][time] ?
                                     <Timeslotentry
