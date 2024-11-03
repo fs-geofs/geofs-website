@@ -1,6 +1,6 @@
 import styles from "@/app/page.module.css"
 import { BACKEND_BASE } from "@/app/BACKEND_URL"
-import error from "./erstiwoche_data_error.json"
+import error_data from "./erstiwoche_data_error.json"
 
 export default async function Content() {
 
@@ -13,8 +13,7 @@ export default async function Content() {
             var erstiwoche = await resp.json()
         }
     } catch(err) {
-        console.log(err.message)
-        var erstiwoche = { ...error }
+        var erstiwoche = { ...error_data }
     }
 
     return (
