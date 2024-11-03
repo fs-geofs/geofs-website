@@ -1,0 +1,48 @@
+{
+    "montag": {
+        "8": null,
+        "10": null,
+        "12": null,
+        "14": null,
+        "16": null,
+        "18": null
+    },
+    "dienstag": {
+        "8": null,
+        "10": null,
+        "12": null,
+        "14": null,
+        "16": null,
+        "18": null
+    },
+    "mittwoch": {
+        "8": null,
+        "10": null,
+        "12": {
+            "title": "Error",
+            "location": "Unknown",
+            "address": "Unknown",
+            "qisserverlink": "",
+            "learnweblink": ""
+        },
+        "14": null,
+        "16": null,
+        "18": null
+    },
+    "donnerstag": {
+        "8": null,
+        "10": null,
+        "12": null,
+        "14": null,
+        "16": null,
+        "18": null
+    },
+    "freitag": {
+        "8": null,
+        "10": null,
+        "12": null,
+        "14": null,
+        "16": null,
+        "18": null
+    }
+}

@@ -1,6 +1,7 @@
 import styles from "@/app/page.module.css"
 
-import schedule from "@/../content/gi/page-content/erstsemester/stundenplan.json"
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
+import error_data from "./schedule_error_data.json"
 
 
 export default function Content() {
@@ -75,9 +76,21 @@ export default function Content() {
     )
 }
 
-function Stundenplan() {
+async function Stundenplan() {
 
     // scheule variable wir oben importiert
+    var schedule = {}
+    try {
+        const resp = await fetch (`${BACKEND_BASE}/erstistundenplan`, {cache: "no-store"});
+        if (resp.status != 200) {
+            throw new Error()
+        } else {
+            var schedule = await resp.json()
+            console.log(schedule)
+        }
+    } catch {
+        var schedule = {... error_data}
+    }
 
     const tage = ["montag", "dienstag", "mittwoch", "donnerstag", "freitag"]
     const times = []
