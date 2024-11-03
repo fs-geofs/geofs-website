@@ -1,7 +1,21 @@
 import styles from "@/app/page.module.css"
-import erstiwochenende from "@/../content/gi/page-content/erstsemester/erstiwochenende.json"
 
-export default function Content() {
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
+import error_data from "./erstiwochenende_data_error.json"
+
+export default async function Content() {
+
+    var erstiwochenende = {}
+    try {
+        const resp = await fetch(`${BACKEND_BASE}/erstiwochenende`, { cache: "no-store" })
+        if (resp.status != 200) {
+            throw new Error();
+        } else {
+            var erstiwochenende = await resp.json()
+        }
+    } catch {
+        var erstiwochenende = { ...error_data }
+    }
 
     return (
         <>
