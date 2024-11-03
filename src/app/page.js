@@ -3,6 +3,9 @@ import styles from "./page.module.css";
 import termine from "@/../content/gi/page-content/start/termine.json"
 import dienste from "@/../content/gi/page-content/start/praesidienste.json"
 
+import dns from 'node:dns';
+dns.setDefaultResultOrder('ipv4first'); // this is needed for ipv4 connection inside docker container to work
+
 export default function Home() {
   return (
     <>
