@@ -40,7 +40,7 @@ function Termine() {
             termine.map(
               termin => {
                 return (
-                  <tr>
+                  <tr key={termin.was+termin.von+termin.bis}>
                     <td className={styles.category}>{termin.was}</td>
                     <td>{termin.von} - {termin.bis}</td>
                   </tr>
@@ -111,7 +111,7 @@ function Praesidienste() {
         </thead>
         <tbody>
           {
-            times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time} />)
+            times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time} key={time}/>)
           }
         </tbody>
       </table>
@@ -125,7 +125,7 @@ const Praeasitime = ({ dienste, tage, time }) => {
     <tr>
       <td>{time} - {time + 1}</td>
       {
-        tage.map(tag => <td>{dienste[tag][time]}</td>)
+        tage.map(tag => <td key={tag}>{dienste[tag][time]}</td>)
       }
     </tr>
   )
