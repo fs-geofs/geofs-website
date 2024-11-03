@@ -1,9 +1,23 @@
 import styles from "@/app/page.module.css"
-import jahrgaenge from "@/../content/gi/page-content/studium/jahrgaenge.json"
 
-export default function Content() {
+import error_data from "./jahrgang_error_data.json"
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
+
+export default async function Content() {
 
     // jahrgaenge variable wird oben importiert
+    var jahrgaenge = []
+    try {
+        const resp = await fetch(`${BACKEND_BASE}/jahrgaenge`, {cache: "no-store"})
+        if (resp.status != 200){
+            throw new Error();
+        } else {
+            var jahrgaenge = await resp.json()
+        }
+    } catch {
+        var jahrgaenge = [... error_data]
+    }
+
 
     return (
         <>
