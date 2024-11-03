@@ -5,7 +5,7 @@ Diese Seite wird angezeigt bei einem 404 Error,
 also wenn eine ungültige URL eingegeben wird
 */
 
-export default function(){
+export default function Content(){
     return (
         <>
             <h1 className={styles.BigHeading}>Error 404</h1>
