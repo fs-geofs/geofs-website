@@ -6,6 +6,6 @@ Autamatisches Reirect zur ersten Child-Seite (aus der Navbar)
 falls irgendein findiger GI diese URL ansteuert.
 */
 
-export default function () {
+export default function Content() {
     redirect("/wp/fachschaft/das-sind-wir")
 }

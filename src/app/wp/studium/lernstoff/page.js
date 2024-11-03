@@ -1,7 +1,7 @@
 import styles from "@/app/page.module.css"
 import localStyles from "./page.module.css"
 
-export default function () {
+export default function Content () {
     return (
         <>
             <h1 className={styles.BigHeading}>Lernstoff</h1>
