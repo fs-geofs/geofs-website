@@ -134,7 +134,7 @@ export default function Content() {
                 wenn mal etwas nicht funktioniert, sondern dran bleiben und ausprobieren.
             </div>
 
-            <h2 className={styles.SmallHeading}>Computa und andere "Legenden"</h2>
+            <h2 className={styles.SmallHeading}>Computa und andere &quot;Legenden&quot;</h2>
             
             <div className={styles.Textblock}>
                 Wie wir inzwischen bei mehreren Jahrgängen feststellten, ist der Bereich „Informatik“ in unserem Studiengang
