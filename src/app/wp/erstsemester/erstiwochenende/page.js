@@ -1,13 +1,7 @@
 import styles from "@/app/page.module.css"
+import erstiwochenende from "@/../content/gi/page-content/erstsemester/erstiwochenende.json"
 
-export default function () {
-
-    const erstiwochenende = {
-        hin: "25.10.2024, 09:30",
-        rueck: "27.10.2024",
-        kosten: "50€",
-        url: "/erstiwe"
-    }
+export default function Content () {
 
     return (
         <>
@@ -74,6 +68,7 @@ export default function () {
 const Packliste = () => {
     return(
         <ul>
+            <li>Für Geoinformatik-Studierende: Fahrrad-Helm</li>
             <li>Ausreichend Proviant für Freitag Mittag und Nachmittag</li>
             <li>Einen sehr persönlichen Gegenstand!</li>
             <li>Musik: CDs, Gitarre oder andere Instrumente, Texte</li>
