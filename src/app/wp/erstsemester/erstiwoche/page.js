@@ -1,10 +1,21 @@
 import styles from "@/app/page.module.css"
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
+import error from "./erstiwoche_data_error.json"
 
-import erstiwoche from "@/../content/gi/page-content/erstsemester/erstiwoche.json"
+export default async function Content() {
 
-export default function Content () {
-
-    // erstiwoche variable wird oben aus JSON importiert
+    var erstiwoche = {}
+    try {
+        const resp = await fetch(`${BACKEND_BASE}/erstiwoche`, { cache: "no-store" })
+        if (resp.status != 200) {
+            throw new Error();
+        } else {
+            var erstiwoche = await resp.json()
+        }
+    } catch(err) {
+        console.log(err.message)
+        var erstiwoche = { ...error }
+    }
 
     return (
         <>
@@ -40,7 +51,7 @@ export default function Content () {
             <h2 className={styles.SmallHeading}>Adresskürzel, und was sich dahinter verbirgt</h2>
             {
                 erstiwoche.locations.map(
-                    location => <Location title={location.title} erklaerung={location.erklaerung} detail={location.detail} osmlink={location.osmlink} key={location.title}/>
+                    location => <Location title={location.title} erklaerung={location.erklaerung} detail={location.detail} osmlink={location.osmlink} key={location.title} />
                 )
             }
             <div className={styles.Textblock}>
@@ -71,7 +82,7 @@ const Schedule = ({ schedule }) => {
                 </tr>
             </thead>
             <tbody>
-                {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time} key={time}/>)}
+                {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time} key={time} />)}
             </tbody>
         </table>
     )
@@ -86,8 +97,8 @@ const Timeslot = ({ schedule, tage, time }) => {
                     {
                         tage.map(
                             tag => schedule[tag][time] ?
-                                <Timeslotentry title={schedule[tag][time].title} detail={schedule[tag][time].detail} key={tag}/> :
-                                <td key={tag}/>
+                                <Timeslotentry title={schedule[tag][time].title} detail={schedule[tag][time].detail} key={tag} /> :
+                                <td key={tag} />
 
                         )}
                 </>

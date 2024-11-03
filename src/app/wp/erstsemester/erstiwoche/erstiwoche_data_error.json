@@ -1,0 +1,286 @@
+{
+    "_comment": "Faulty data to be displayed in case stuff goes wrong",
+    "year": "UNKNOWN",
+    "start": "UNKNOWN",
+    "end": "UNKNOWN",
+    "schedule": {
+        "montag": {
+            "9": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "10": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "11": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "12": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "13": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "14": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "15": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "16": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "17": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "18": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "19": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "20": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "21": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            }
+        },
+        "dienstag": {
+            "9": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "10": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "11": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "12": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "13": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "14": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "15": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "16": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "17": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "18": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "19": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "20": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "21": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            }
+        },
+        "mittwoch": {
+            "9": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "10": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "11": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "12": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "13": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "14": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "15": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "16": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "17": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "18": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "19": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "20": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "21": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            }
+        },
+        "donnerstag": {
+            "9": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "10": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "11": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "12": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "13": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "14": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "15": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "16": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "17": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "18": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "19": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "20": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "21": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            }
+        },
+        "freitag": {
+            "9": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "10": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "11": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "12": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "13": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "14": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "15": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "16": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "17": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "18": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "19": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "20": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            },
+            "21": {
+                "title": "error",
+                "detail": "UNKNOWN"
+            }
+        }
+    },
+    "locations": [
+        {
+            "title": "ERROR",
+            "erklaerung": "UNKNOWN LOCATION",
+            "detail": null,
+            "osmlink": null
+        }
+    ]
+}
