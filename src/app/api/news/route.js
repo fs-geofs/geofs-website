@@ -4,7 +4,7 @@ import DOMPurify from "isomorphic-dompurify"
 export async function GET(request) {
 
   //.next/server is the path to the build folder that is created when you run next command
-  const dir_path = __dirname.replace(".next/server/app/api/news", "src/news-articles/");
+  const dir_path = __dirname.replace(".next/server/app/api/news", "content/gi/news-articles/");
 
   // query directory for files
   const filenames = (await fs.readdir(dir_path))
