@@ -8,7 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function Menu() {
     return(
-        <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
+        <Navbar expand="lg" className="bg-body-secondary" sticky="top">
             <Container>
             <Navbar.Brand href="/">Start</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
