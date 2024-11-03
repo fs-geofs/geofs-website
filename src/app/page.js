@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 
-import termine from "@/../content/gi/page-content/start/termine.json"
-import dienste from "@/../content/gi/page-content/start/praesidienste.json"
+import { BACKEND_BASE } from "./BACKEND_URL";
+import FetchError from "@/components/error_fetching";
 
 import dns from 'node:dns';
 dns.setDefaultResultOrder('ipv4first'); // this is needed for ipv4 connection inside docker container to work
@@ -22,9 +22,25 @@ export default function Home() {
   );
 }
 
-function Termine() {
+async function Termine() {
 
-  // termine variable is importet on top
+  var termine = {}
+
+  try {
+    const resp = await fetch(`${BACKEND_BASE}/termine`, {cache: "no-store" })
+    if (resp.status != 200) {
+      throw new Error()
+    } else {
+      var termine = await resp.json()
+    }
+  } catch {
+    return (
+      <>
+        <h2 className={styles.SmallHeading}>Termine</h2>
+        <FetchError />
+      </>
+    )
+  }
 
   return (
     <>
@@ -35,7 +51,7 @@ function Termine() {
             termine.map(
               termin => {
                 return (
-                  <tr key={termin.was+termin.von+termin.bis}>
+                  <tr key={termin.was + termin.von + termin.bis}>
                     <td className={styles.category}>{termin.was}</td>
                     <td>{termin.von} - {termin.bis}</td>
                   </tr>
@@ -49,9 +65,25 @@ function Termine() {
   )
 }
 
-function Praesidienste() {
+async function Praesidienste() {
 
-  // dienste variable is importet on top
+  var dienste = {}
+
+  try {
+    const resp = await fetch(`${BACKEND_BASE}/praesidienste`, { cache: "no-store" })
+    if (resp.status != 200) {
+      throw new Error()
+    } else {
+      var dienste = await resp.json()
+    }
+  } catch {
+    return (
+      <>
+        <h2 className={styles.SmallHeading}>Präsenzzeiten im Fachschaftsraum</h2>
+        <FetchError />
+      </>
+    )
+  }
 
   const tage = ["montag", "dienstag", "mittwoch", "donnerstag", "freitag"]
   const times = []
@@ -90,7 +122,7 @@ function Praesidienste() {
         </thead>
         <tbody>
           {
-            times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time} key={time}/>)
+            times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time} key={time} />)
           }
         </tbody>
       </table>
