@@ -1,21 +1,21 @@
 import styles from "@/app/page.module.css"
 import erstiwochenende from "@/../content/gi/page-content/erstsemester/erstiwochenende.json"
 
-export default function Content () {
+export default function Content() {
 
     return (
         <>
             <h1 className={styles.BigHeading}>Ersti-Wochenende</h1>
             <div className={styles.Textblock}>
-            Besonders freuen wir uns auch auf unser jährliches Ersti-Wochenende.
-            Wir fahren wieder in das <a href="https://druebberholz.de/">Tagungshaus Drübberholz</a>,
-            um einander besser kennenzulernen und eine spaßige Zeit zu haben.
-            Das Wochenende findet gemeinsam mit der Fachschaft Geographie-Landschaftsökologie statt.
+                Besonders freuen wir uns auch auf unser jährliches Ersti-Wochenende.
+                Wir fahren wieder in das <a href="https://druebberholz.de/">Tagungshaus Drübberholz</a>,
+                um einander besser kennenzulernen und eine spaßige Zeit zu haben.
+                Das Wochenende findet gemeinsam mit der Fachschaft Geographie-Landschaftsökologie statt.
             </div>
             <div className={styles.Textblock}>
-                <strong>Hinfahrt</strong>: {erstiwochenende.hin}<br/>
-                <strong>Rückfahrt</strong>: {erstiwochenende.rueck}<br/>
-                <strong>Kostenbeitrag</strong>: {erstiwochenende.kosten}<br/>
+                <strong>Hinfahrt</strong>: {erstiwochenende.hin}<br />
+                <strong>Rückfahrt</strong>: {erstiwochenende.rueck}<br />
+                <strong>Kostenbeitrag</strong>: {erstiwochenende.kosten}<br />
                 <strong>Anmeldung</strong>: Online <a href={erstiwochenende.url}>hier</a> (Anwesenheit in er Ersti-Woche erforderlich)
             </div>
 
@@ -66,7 +66,7 @@ export default function Content () {
 }
 
 const Packliste = () => {
-    return(
+    return (
         <ul>
             <li>Für Geoinformatik-Studierende: Fahrrad-Helm</li>
             <li>Ausreichend Proviant für Freitag Mittag und Nachmittag</li>
