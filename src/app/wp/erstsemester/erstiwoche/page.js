@@ -40,7 +40,7 @@ export default function Content () {
             <h2 className={styles.SmallHeading}>Adresskürzel, und was sich dahinter verbirgt</h2>
             {
                 erstiwoche.locations.map(
-                    location => <Location title={location.title} erklaerung={location.erklaerung} detail={location.detail} osmlink={location.osmlink} />
+                    location => <Location title={location.title} erklaerung={location.erklaerung} detail={location.detail} osmlink={location.osmlink} key={location.title}/>
                 )
             }
             <div className={styles.Textblock}>
@@ -71,7 +71,7 @@ const Schedule = ({ schedule }) => {
                 </tr>
             </thead>
             <tbody>
-                {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time} />)}
+                {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time} key={time}/>)}
             </tbody>
         </table>
     )
@@ -86,7 +86,7 @@ const Timeslot = ({ schedule, tage, time }) => {
                     {
                         tage.map(
                             tag => schedule[tag][time] ?
-                                <Timeslotentry title={schedule[tag][time].title} detail={schedule[tag][time].detail} /> :
+                                <Timeslotentry title={schedule[tag][time].title} detail={schedule[tag][time].detail} key={tag}/> :
                                 <td />
 
                         )}
