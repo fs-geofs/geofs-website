@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <h1 className={styles.BigHeading}>Herzlich Willkommen...</h1>
       <div className={styles.Textblock}>
-        …auf den Seiten der Fachschaft Geoinformatik an der Westfälischen Wilhelms-Universität Münster.
+        …auf den Seiten der Fachschaft Geoinformatik an der Universität Münster.
         Auf den folgenden Seiten findet ihr Informationen zum Studium, der Fachschaft und vielem mehr,
         was für euch als (zukünftige) Studierende der Geoinformatik interessant sein könnte.
       </div>
