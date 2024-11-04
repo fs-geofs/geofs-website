@@ -18,7 +18,6 @@ export default async function Content() {
         }
     } catch {
         var rollen = { ...error_data }
-        console.log(error_data)
     }
 
     return (
