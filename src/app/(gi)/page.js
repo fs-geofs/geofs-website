@@ -1,6 +1,6 @@
 import styles from "@/app/page.module.css";
 
-import { BACKEND_BASE } from "./BACKEND_URL";
+import { BACKEND_BASE } from "../BACKEND_URL";
 import FetchError from "@/app/components/error_fetching";
 
 import dns from 'node:dns';

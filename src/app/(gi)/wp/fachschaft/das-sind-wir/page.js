@@ -4,7 +4,7 @@ import Image from "next/image"
 import Fachschaft from "@/img/fachschaft.jpg"
 
 import error_data from "./rollen_error_data.json"
-import { BACKEND_BASE } from "@/app/(gi)/BACKEND_URL"
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
 
 export default async function Content() {
 

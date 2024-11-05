@@ -4,7 +4,7 @@ import localStyle from "./page.module.css"
 import DOMPurify from "isomorphic-dompurify"
 import FetchError from "@/app/components/error_fetching"
 
-import { BACKEND_BASE } from "@/app/(gi)/BACKEND_URL"
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
 
 export default async function Site() {
 

@@ -1,6 +1,6 @@
 import styles from "@/app/page.module.css"
 
-import { BACKEND_BASE } from "@/app/(gi)/BACKEND_URL"
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
 import error_data from "./erstiwochenende_data_error.json"
 
 export default async function Content() {

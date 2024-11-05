@@ -1,7 +1,7 @@
 import styles from "@/app/page.module.css"
 import localStyle from "./page.module.css"
 
-import { BACKEND_BASE } from "@/app/(gi)/BACKEND_URL"
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
 import FetchError from "@/app/components/error_fetching"
 
 import DOMPurify from "isomorphic-dompurify"
