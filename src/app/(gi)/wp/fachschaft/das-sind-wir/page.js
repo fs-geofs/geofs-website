@@ -1,7 +1,7 @@
 import styles from "@/app/page.module.css"
 
 import Image from "next/image"
-import Fachschaft from "@/img/fachschaft.jpg"
+//import Fachschaft from "@/img/fachschaft.jpg"
 
 import error_data from "./rollen_error_data.json"
 import { BACKEND_BASE } from "@/app/BACKEND_URL"
@@ -19,11 +19,12 @@ export default async function Content() {
     } catch {
         var rollen = { ...error_data }
     }
+    //<Image src={Fachschaft} style={{ maxWidth: "100%", height: "auto" }} alt="Gruppenbild der Fachschaft vorm Geo" />
 
     return (
         <>
             <h1 className={styles.BigHeading}>Der Fachschaftsrat</h1>
-            <Image src={Fachschaft} style={{ maxWidth: "100%", height: "auto" }} alt="Gruppenbild der Fachschaft vorm Geo" />
+            <img src={`${BACKEND_BASE}/foto_gi`} alt="Fachschaft FSGI vomr Geo" style={{ maxWidth: "100%", height: "auto" }}/>
             <div className={styles.Textblock}>
                 Die Posten des Fachschaftsrates (und dazu am besten passenden Personen) werden von der
                 Fachschaftsvertretung gewählt.
