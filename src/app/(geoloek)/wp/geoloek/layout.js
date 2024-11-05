@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "@/app/globals.css";
-import Menu from "@/app/components/navbar-gi"
+import Menu from "@/app/components/navbar-geoloek"
 
 export const metadata = {
-  title: "Fachschaft Geoinformatik",
-  description: "Made with Love in Münster",
+  title: "Fachschaft Geographie-Landschaftsökologie Münster",
+  description: "Made with Love by GI in Münster",
 };
 
 export default function RootLayout({ children }) {
@@ -29,7 +29,7 @@ function Header() {
   return (
     <header className="Header" id="HeaderGeoloek">
       <a href="/">
-        <h1>Fachschaft GeoLök Münster</h1>
+        <h1>Fachschaft Geographie-Landschaftsökologie Münster</h1>
       </a>
     </header>
   )
