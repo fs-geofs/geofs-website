@@ -34,6 +34,7 @@ export default function Menu() {
                             <NavDropdown.Item href="/wp/geoloek/praesenzzeiten">Präsenzzeiten</NavDropdown.Item>
                         </NavDropdown>
                         
+                        <Nav.Link href="/wp/geoloek/kontakt">Kontakt</Nav.Link>
 
                     </Nav>
                 </Navbar.Collapse>
