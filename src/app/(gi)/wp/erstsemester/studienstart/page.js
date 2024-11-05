@@ -86,7 +86,6 @@ async function Stundenplan() {
             throw new Error()
         } else {
             var schedule = await resp.json()
-            console.log(schedule)
         }
     } catch {
         var schedule = {... error_data}
