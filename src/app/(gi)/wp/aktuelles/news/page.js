@@ -2,7 +2,7 @@ import styles from "@/app/page.module.css"
 import localStyle from "./page.module.css"
 
 import DOMPurify from "isomorphic-dompurify"
-import FetchError from "@/app/(gi)/components/error_fetching"
+import FetchError from "@/app/components/error_fetching"
 
 import { BACKEND_BASE } from "@/app/(gi)/BACKEND_URL"
 

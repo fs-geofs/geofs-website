@@ -24,16 +24,22 @@ body {
   margin: 0;
 }
 
-
-#Header {
+#HeaderGI {
   background: url("/website-img/geofs_header2.png");
+}
+
+#HeaderGeoloek {
+  background-color: darkgreen;
+}
+
+.Header {
   background-size: 1600px auto;
   min-height: 230px;
   display: flex; /* enable flexbox */
   justify-content: center;
 }
 
-#Header h1 {
+.Header h1 {
   font-size: 40px;
   font-weight: bold;
   line-height: 1;
@@ -42,7 +48,7 @@ body {
   font-family: Bitter, Georgia, serif;
 }
 
-#Header a {
+.Header a {
   color: black;
 }
 
@@ -66,7 +72,7 @@ Possible to override values set above.
 Here, special values are set for display on large wide (computer) screens
 */
 @media screen and (min-width: 700px) {
-  #Header h1 {
+  .Header h1 {
     font-size: 58px;
   }
 

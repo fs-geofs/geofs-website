@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import "./globals.css";
-import Menu from "@/app/(gi)/components/navbar"
+import "@/app/globals.css";
+import Menu from "@/app/components/navbar"
 
 export const metadata = {
   title: "Fachschaft Geoinformatik",
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
 
 function Header() {
   return (
-    <header id="Header">
+    <header className="Header" id="HeaderGeoloek">
       <a href="/">
         <h1>Fachschaft GeoLök Münster</h1>
       </a>
