@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 function Header() {
   return (
     <header className="Header" id="HeaderGeoloek">
-      <a href="/">
+      <a href="/wp/geoloek">
         <h1>Fachschaft Geographie-Landschaftsökologie Münster</h1>
       </a>
     </header>
