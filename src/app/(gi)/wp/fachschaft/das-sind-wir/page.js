@@ -20,7 +20,7 @@ export default async function Content() {
     return (
         <>
             <h1 className={styles.BigHeading}>Der Fachschaftsrat</h1>
-            <img src={`${BACKEND_BASE}/foto_gi`} alt="Fachschaft FSGI vomr Geo" style={{ maxWidth: "100%", height: "auto" }}/>
+            <img src={`/website-api/foto-gi`} alt="Fachschaft FSGI vomr Geo" style={{ maxWidth: "100%", height: "auto" }}/>
             <div className={styles.Textblock}>
                 Die Posten des Fachschaftsrates (und dazu am besten passenden Personen) werden von der
                 Fachschaftsvertretung gewählt.
