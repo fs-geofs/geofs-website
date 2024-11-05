@@ -34,7 +34,6 @@ async function Praesenzzeiten() {
             var dienste = await resp.json()
         }
     } catch(err) {
-        console.log(err)
         return (
             <>
                 <h2 className={styles.SmallHeading}>Präsenzzeiten im Fachschaftsraum</h2>
