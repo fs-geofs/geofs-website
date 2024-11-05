@@ -14,7 +14,7 @@ export default function Content() {
                 Raum 100.024<br/>
                 48140 Münster
             </div>
-            <h2 className={styles.SmallHeading}>Telefon</h2>
+            <h2 className={styles.SmallHeading}>Telefon / WhatsApp</h2>
             <div className={styles.Textblock}>0251 83-33947</div>
             <h2 className={styles.SmallHeading}>eMail</h2>
             <div className={styles.Textblock}>
