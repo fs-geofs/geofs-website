@@ -109,7 +109,7 @@ async function Praesidienste() {
           damit wir euch informieren können, wann die nächste Sitzung stattfindet.
         </div>
       </div>
-      <table className={styles.Table}>
+      <table className={styles.Table} id="praesenzzeiten">
         <thead>
           <tr>
             <td>Zeit</td>
