@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "@/app/globals.css";
-import Menu from "@/app/components/navbar"
+import Menu from "@/app/components/navbar-gi"
 
 export const metadata = {
   title: "Fachschaft Geoinformatik",
