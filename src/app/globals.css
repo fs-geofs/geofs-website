@@ -29,7 +29,16 @@ body {
 }
 
 #HeaderGeoloek {
-  background-color: darkgreen;
+  background: url("/website-img/geoloek_header.jpg");
+  color: white;
+}
+
+#HeaderGI a {
+  color: black;
+}
+
+#HeaderGeoloek a {
+  color: white;
 }
 
 .Header {
@@ -48,9 +57,7 @@ body {
   font-family: Bitter, Georgia, serif;
 }
 
-.Header a {
-  color: black;
-}
+
 
 #Page {
   max-width: 840px;
