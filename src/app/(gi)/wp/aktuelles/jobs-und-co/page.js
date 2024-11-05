@@ -1,18 +1,18 @@
 import styles from "@/app/page.module.css"
 import localStyle from "./page.module.css"
 
-import DOMPurify from "isomorphic-dompurify"
-import FetchError from "@/components/error_fetching"
+import { BACKEND_BASE } from "@/app/(gi)/BACKEND_URL"
+import FetchError from "@/app/(gi)/components/error_fetching"
 
-import { BACKEND_BASE } from "@/app/BACKEND_URL"
+import DOMPurify from "isomorphic-dompurify"
 
 export default async function Site() {
 
-    const blog_entries = []
+    const job_entries = []
 
     // call API to fetch news articles
     try {
-        const resp = await fetch(`${BACKEND_BASE}/news`, { method: "GET", cache: "no-store" })
+        const resp = await fetch(`${BACKEND_BASE}/joblistings`, { method: "GET", cache: "no-store" })
         if (resp.status !== 200) {
             throw new Error()
         } else {
@@ -25,33 +25,28 @@ export default async function Site() {
                         .replaceAll("<h3>", `<h1 class=${styles.VerySmallHeading}>`) //apply h3 formatting
                         .replaceAll("<div>", `<div class=${styles.Textblock}>`) // apply Textbox formatting to divs
                 )
-                blog_entries.push(
+                job_entries.push(
                     <div className={localStyle.Blogpost} key={entry.id}>
-                        <h4>{
-                            // reformat date string
-                            entry.date
-                                .split("-")
-                                .reverse()
-                                .join(".")
-                        }</h4>
                         <div dangerouslySetInnerHTML={{ __html: html_to_insert }} />
                     </div>
                 )
-            }
-            )
+            })
         }
     } catch {
-        blog_entries.push(
+        return (
             <>
-                <h1 className={styles.BigHeading}>News</h1>
-                <FetchError />
-            </>
+            <h1 className={styles.BigHeading}>Jobs und Co</h1>
+            <FetchError />
+        </>
         )
     }
 
+
+
     return (
         <>
-            {blog_entries.map(entry => entry)}
+            <h1 className={styles.BigHeading}>Jobs und Co</h1>
+            {job_entries.map(entry => entry)}
         </>
     )
 }

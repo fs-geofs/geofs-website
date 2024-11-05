@@ -7,7 +7,7 @@ An dieser Datei aber nichts verändern, solange man nicht sehr gute Gründe daf�
 */
 
 
-import Home from "@/app/page"
+import Home from "@/app/(gi)/page"
 
 export default function Newhome() {
     return <Home />

@@ -1,7 +1,7 @@
 import styles from "@/app/page.module.css"
 
 import error_data from "./jahrgang_error_data.json"
-import { BACKEND_BASE } from "@/app/BACKEND_URL"
+import { BACKEND_BASE } from "@/app/(gi)/BACKEND_URL"
 
 export default async function Content() {
 

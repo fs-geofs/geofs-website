@@ -1,7 +1,7 @@
-import styles from "./page.module.css";
+import styles from "@/app/page.module.css";
 
 import { BACKEND_BASE } from "./BACKEND_URL";
-import FetchError from "@/components/error_fetching";
+import FetchError from "@/app/(gi)/components/error_fetching";
 
 import dns from 'node:dns';
 dns.setDefaultResultOrder('ipv4first'); // this is needed for ipv4 connection inside docker container to work

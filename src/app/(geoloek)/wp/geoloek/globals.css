@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Bitter;
+  src: url("/fonts/Bitter-VariableFont_wght.ttf");
+}
+
+:root {
+  background-color: #dddddd;
+}
+
+
+html {
+  max-width: 100vw;
+}
+
+body {
+  width: 100%;
+  max-width: 1600px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+#Header {
+  background: url("/website-img/geofs_header2.png");
+  background-size: 1600px auto;
+  min-height: 230px;
+  display: flex; /* enable flexbox */
+  justify-content: center;
+}
+
+#Header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 58px 0 10px;
+  display: inline-block;
+  font-family: Bitter, Georgia, serif;
+}
+
+#Header a {
+  color: black;
+}
+
+#Page {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Content {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*
+only applies to screens wider than 700px
+Possible to override values set above.
+Here, special values are set for display on large wide (computer) screens
+*/
+@media screen and (min-width: 700px) {
+  #Header h1 {
+    font-size: 58px;
+  }
+
+  #Content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
