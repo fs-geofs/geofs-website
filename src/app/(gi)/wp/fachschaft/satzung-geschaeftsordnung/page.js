@@ -106,7 +106,7 @@ function Geschaeftsordnung() {
             <div className={styles.Textblock}>
                 <u>§1 Allgemeines</u><br />
                 <ol>
-                    <li>Diese Geschäftsordnung basiert auf § 4 Abs. 2 der Satzung der Fachschaft der GeoinformatikerInnen am Institut für Geoinformatik der Westfälsichen Wilhelms Universität Münster vom 17.01.2002 und auf § 16 der Satzung der Studierendenschaft der Westfälischen Wilhelms Universität Münster vom 22.10.2002.</li>
+                    <li>Diese Geschäftsordnung basiert auf § 4 Abs. 2 der Satzung der Fachschaft der GeoinformatikerInnen am Institut für Geoinformatik der Universität Münster vom 17.01.2002 und auf § 16 der Satzung der Studierendenschaft der Westfälischen Wilhelms Universität Münster vom 22.10.2002.</li>
                     <li>Die Geschäftsordung regelt die Aufgaben des Fachschaftsrates (FSR).</li>
                 </ol>
             </div>
@@ -201,9 +201,7 @@ function Geschaeftsordnung() {
                 </ol>
             </div>
             <div className={styles.Textblock}>
-                Die Geschäftsordnung soll das tägliche Schaffen des Fachschaftsrats regeln. Manche Regeln werden immer wieder gerne gebrochen,
-                manche Regel ist nur dem Regelschreiber bekannt. Aber wir sind eine der wenigen Fachschaften in Münster, die so eine Geschäftsordnung haben.
-                Damit ist ja wohl alles geregelt.
+                Die Geschäftsordnung soll das tägliche Schaffen des Fachschaftsrats regeln. Manche Regeln werden immer wieder gerne gebrochen, manche Regel ist nur dem Regelschreiber bekannt. Aber wir sind eine der wenigen Fachschaften in Münster, die so eine Geschäftsordnung haben. Damit ist ja wohl alles geregelt.
             </div>
         </>
     )
