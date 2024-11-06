@@ -17,7 +17,7 @@ function Satzung() {
                 Satzung der Fachschaft Geoinformatik am Institut für Geoinformatik der Universität Münster
             </h2>
             <div className={styles.Textblock}>
-                in der Fassung vom 17.01.2002, geändert am 16.12.2003 und am 18.1.2012
+                in der Fassung vom 17.01.2002, geändert am 16.12.2003, 18.1.2012 und 08.05.2024.
             </div>
             <div className={styles.Textblock}>
                 <u>Inhalt:</u><br />
@@ -31,12 +31,12 @@ function Satzung() {
             </div>
             <div className={styles.Textblock}>
                 <u>§1 Aufgaben der Fachschaft</u><br />
-                Die Fachschaft Geoinformatik der Westfälischen Wilhelms-Universität Münster (GEOFS) nimmt die gemeinsamen Interessen ihrer Mitglieder wahr und vertritt deren fachlichen Belange entsprechend §1 I Satzung der Studierendenschaft der WWU vom 22.10.2002.<br />
+                Die Fachschaft Geoinformatik der Universität Münster (GEOFS) nimmt die gemeinsamen Interessen ihrer Mitglieder wahr und vertritt deren fachlichen Belange entsprechend §1 I Satzung der Studierendenschaft der Universität Münster vom 22.10.2002.<br />
                 Die Fachschaft soll insbesondere<br />
                 die wissenschaftliche Ausbildung ihrer Mitglieder fördern,<br />
                 die Arbeit der studentischen Vertreter im Fachbereichsrat sowie deren Ausschüssen koordinieren und durch Beratung unterstützen.<br />
                 Die Fachschaft beschließt weiterhin die folgenden Ziele und Aufgaben zu verfolgen:<br />
-                Schaffung einer zentralen Anlaufstelle für die Belange der Studierenden der Geoinformatik am ifgi sowie die Vermittlung zwischen den Fachbereichen an der WWU zu betreiben.<br />
+                Schaffung einer zentralen Anlaufstelle für die Belange der Studierenden der Geoinformatik am ifgi sowie die Vermittlung zwischen den Fachbereichen an der Universität Münster zu betreiben.<br />
                 Organisation der Betreuung der Erstsemester.<br />
                 Förderung und Verbreitung von OpenSource-Technologien.<br />
                 Einwirkung auf die Gremien auf Instituts- und Fachbereichsebene durch Vertreter sowie Mitarbeit in der Berufungskommissionen.<br />
@@ -44,9 +44,9 @@ function Satzung() {
             </div>
             <div className={styles.Textblock}>
                 <u>§2 Mitgliedschaft</u><br />
-                Jede/Jeder Studierende ist in der gemäß §5 I gebildeten Fachschaft der Geoinformatiker der WWU ordentliches Mitglied, wenn sie/er am Fachbereich Geowissenschaften im Hauptfach Geoinformatik immatrikuliert ist.<br />
+                Jede/Jeder Studierende ist in der gemäß §5 I gebildeten Fachschaft der Geoinformatiker der Universität Münster ordentliches Mitglied, wenn sie/er am Fachbereich Geowissenschaften im Hauptfach Geoinformatik immatrikuliert ist.<br />
                 Nur ordentliche Mitglieder der Fachschaft haben das aktive und passive Wahlrecht bei der Bildung der Fachschaftsvertretung. Gasthörer haben kein Wahlrecht.<br />
-                Haben sich Studierende in weiteren Fachbereichen neben dem Fachbereich Geowissenschaften eingeschrieben, so sind diese Mitglieder der Fachschaft, welche sie bei der Einschreibung bzw. bei der Rückmeldung erklärt haben.<br />
+                Haben sich Studierende in weiteren Fachbereichen neben dem Fachbereich Geowissenschaften eingeschrieben, so sind diese Mitglieder der Fachschaft, welche sie bei der Einschreibung bzw. bei der Rückmeldung erklärt haben.
             </div>
             <div className={styles.Textblock}>
                 <u>§3 Einberufung und Befugnisse der Fachschaftsvollversammlung</u><br />
@@ -57,28 +57,28 @@ function Satzung() {
                 Versammlungsleiter/in ist ein Mitglied der Fachschaft.<br />
                 Alle anwesenden Fachschaftsmitglieder haben Rede-, Stimm- und Antragsrecht.<br />
                 Für die FSVV ist die Geschäftsordnung des Fachschaftsrates entsprechend anzuwenden. Über die FSVV ist ein Protokoll anzufertigen.<br />
-                Die Verabschiedung sowie die spätere Änderung der Satzung können nur mit 2/3-Mehrheit der anwesenden Stimmberechtigten durchgeführt werden.<br />
+                Die Verabschiedung sowie die spätere Änderung der Satzung können nur mit 2/3-Mehrheit der anwesenden Stimmberechtigten durchgeführt werden.
             </div>
             <div className={styles.Textblock}>
                 <u>§4 Aufgaben und Zusammensetzung des Fachschaftsrates</u><br />
-                Der Fachschaftsrat der Geoinformatiker/innen der WWU nimmt die Aufgaben der Fachschaft nach §1 wahr.<br />
+                Der Fachschaftsrat der Geoinformatiker/innen der Universität Münster nimmt die Aufgaben der Fachschaft nach §1 wahr.<br />
                 Der Fachschaftsrat gibt sich eine Geschäftsordnung.<br />
                 Der Fachschaftsrat beschließt eine Finanzordnung.<br />
                 Die Sitzungen sind öffentlich. Stimmberechtigt sind alle unter §2 Absatz 1 genannten Personen. Der Fachschaftsrat kann weiteren Mitgliedern anderer Fachschaften der Universität Münster das Stimmrecht erteilen.
             </div>
             <div className={styles.Textblock}>
                 <u>§5 Wahl der Fachschaftsvertretung</u><br />
-                Die Fachschaftsvertretung wird in freier, allgemeiner, unmittelbarer, gleicher und geheimer Urnenwahl durch die ordentlichen Mitglieder der Fachschaft der Geoinformatiker/innen der WWU gewählt.<br />
+                Die Fachschaftsvertretung wird in freier, allgemeiner, unmittelbarer, gleicher und geheimer Urnenwahl durch die ordentlichen Mitglieder der Fachschaft der Geoinformatiker/innen der Universität Münster gewählt.
                 Näheres regelt die Wahlordnung zur Wahl der Fachschaftsvertretung.
             </div>
             <div className={styles.Textblock}>
                 <u>§6 Schlussbestimmungen</u><br />
                 Wurde gestrichen am 18.1.2012.<br />
-                Grundlage dieser Satzung, sowie weiterführend und verbindlich ist die Satzung der Studierendenschaft der WWU.<br />
+                Grundlage dieser Satzung, sowie weiterführend und verbindlich ist die Satzung der Studierendenschaft der Universität Münster.
             </div>
             <div className={styles.Textblock}>
                 <u>§7 Inkrafttreten</u><br />
-                Diese Satzung der Fachschaft der Geoinformatiker der WWU tritt nach Verabschiedung auf der konstituierenden Fachschaftsvollversammlung am 17.01.2002 in Kraft.
+                Diese Satzung der Fachschaft der Geoinformatiker der Universität Münster tritt nach Verabschiedung auf der konstituierenden Fachschaftsvollversammlung am 17.01.2002 in Kraft.
             </div>
         </>
     )
