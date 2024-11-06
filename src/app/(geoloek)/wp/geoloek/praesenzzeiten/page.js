@@ -33,7 +33,7 @@ async function Praesenzzeiten() {
         } else {
             var dienste = await resp.json()
         }
-    } catch(err) {
+    } catch (err) {
         return (
             <>
                 <h2 className={styles.SmallHeading}>Präsenzzeiten im Fachschaftsraum</h2>
@@ -66,23 +66,29 @@ async function Praesenzzeiten() {
                     damit wir euch informieren können, wann die nächste Sitzung stattfindet.
                 </div>
             </div>
-            <table className={styles.Table} id="praesenzzeiten">
-                <thead>
-                    <tr>
-                        <td>Zeit</td>
-                        <td>Montag</td>
-                        <td>Dienstag</td>
-                        <td>Mittwoch</td>
-                        <td>Donnerstag</td>
-                        <td>Freitag</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time} key={time} />)
-                    }
-                </tbody>
-            </table>
+            <div>
+
+                <table className={styles.Table} id="praesenzzeiten">
+                    <thead>
+                        <tr>
+                            <td>Zeit</td>
+                            <td>Montag</td>
+                            <td>Dienstag</td>
+                            <td>Mittwoch</td>
+                            <td>Donnerstag</td>
+                            <td>Freitag</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            times.map(time => <Praeasitime dienste={dienste} tage={tage} time={time} key={time} />)
+                        }
+                    </tbody>
+                </table>
+                <div style={{ textAlign: "right", fontStyle: "italic" }}>
+                    Stand: {dienste.stand}
+                </div>
+            </div>
         </>
     )
 }
