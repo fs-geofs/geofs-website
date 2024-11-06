@@ -21,7 +21,7 @@ export default async function Content() {
             <h1 className={styles.BigHeading}>Ersti-Woche</h1>
             <div className={styles.Textblock}>
                 Wir laden alle Geoinformatik-Erstsemesterstudierende sehr herzlich zu unserer Ersti-Woche
-                (manchmal auch -Woche genannt) ein!
+                (manchmal auch O-Woche genannt) ein!
                 Diese findet immer in der Woche vor Vorlesungsbeginn statt.
                 <div />
                 <div className={styles.Textblock}>
