@@ -1,7 +1,5 @@
 import styles from "@/app/page.module.css"
 
-import { PROTOKOLL_URL } from "@/app/BACKEND_URL"
-
 export default function Content() {
     
     const protokoll_url = process.env.PROTOKOLL_ENDPOINT
