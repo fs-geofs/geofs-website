@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "BACKEND_URL=localhost BACKEND_PORT=5000 next dev",
+    "dev": "BACKEND_URL=localhost BACKEND_PORT=5000 PROTOKOLL_ENDPOINT=https://giv-geofs.uni-muenster.de/protokolle/ next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
