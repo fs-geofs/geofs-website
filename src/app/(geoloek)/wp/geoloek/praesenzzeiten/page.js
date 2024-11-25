@@ -1,3 +1,7 @@
+/*
+Warum ist diese Seite hier und nicht im "Angebote"-Ordner? Da würde er doch von der URL-Struktur besser hinpassen...
+Antwort: Die URL /wp/geoloek/praesenzzeiten wird vom Display vorm FS-Raum abgerufen. Daher ist das hier platziert.
+*/
 import styles from "@/app/page.module.css";
 import FetchError from "@/app/components/error_fetching";
 
