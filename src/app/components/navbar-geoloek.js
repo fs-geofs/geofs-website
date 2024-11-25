@@ -48,7 +48,7 @@ export default function Menu() {
 
                         <NavDropdown title="Über uns" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/wp/geoloek/ueber-uns/was-wir-sind">Was wir sind</NavDropdown.Item>
-                            <NavDropdown.Item href="/wp/geoloek/ueber-uns/organisation">Organisationen</NavDropdown.Item>
+                            <NavDropdown.Item href="/wp/geoloek/ueber-uns/organisation">Organisation</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/ueber-uns/bufata">Bufata</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/ueber-uns/aemter">Ämter</NavDropdown.Item>
                         </NavDropdown>
