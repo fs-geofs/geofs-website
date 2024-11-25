@@ -39,6 +39,7 @@ body {
 
 #HeaderGeoloek a {
   color: white;
+  text-shadow: black 1px 1px;
 }
 
 .Header {
