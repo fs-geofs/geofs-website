@@ -53,7 +53,7 @@ async function Termine() {
                 return (
                   <tr key={termin.was + termin.von + termin.bis}>
                     <td className={styles.category}>{termin.was}</td>
-                    <td>{termin.von} - {termin.bis}</td>
+                    <td>{termin.von} {termin.bis ? "- "+termin.bis : ""}</td>
                   </tr>
                 )
               }
