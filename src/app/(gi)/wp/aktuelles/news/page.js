@@ -6,17 +6,37 @@ import FetchError from "@/app/components/error_fetching"
 
 import { BACKEND_BASE } from "@/app/BACKEND_URL"
 
-export default async function Site() {
+export default async function Site({ searchParams }) {
+
+    let { page } = await searchParams
+    if (!page) {
+        page = "0"
+    }
+
+    page = parseInt(page)
+
+    if (isNaN(page)) {
+        page = 0
+    }
+
+    if (page < 0) {
+        page = 0
+    }
 
     const blog_entries = []
+    let next_page = null
+    let prev_page = null
 
     // call API to fetch news articles
     try {
-        const resp = await fetch(`${BACKEND_BASE}/news`, { method: "GET", cache: "no-store" })
+        const resp = await fetch(`${BACKEND_BASE}/news?page=${page}`, { method: "GET", cache: "no-store" })
         if (resp.status !== 200) {
             throw new Error()
         } else {
-            const entries = await resp.json()
+            const data = await resp.json()
+            const entries = data.news
+            next_page = data.next
+            prev_page = data.prev
             entries.map(entry => {
                 const html_to_insert = DOMPurify.sanitize(
                     entry.content
@@ -51,7 +71,23 @@ export default async function Site() {
 
     return (
         <>
+            <NavButtons prev_page={prev_page} next_page={next_page}/>
             {blog_entries.map(entry => entry)}
+            <NavButtons prev_page={prev_page} next_page={next_page}/>
         </>
+    )
+}
+
+
+const NavButtons = ({ prev_page, next_page }) => {
+    return (
+        <div className={localStyle.Navbuttons}>
+            <div className={localStyle.Prev}>
+                {prev_page !== null ? <a href={`?page=${prev_page}`}>🡐 Neuere Beiträge</a> : ""}
+            </div>
+            <div className={localStyle.Next}>
+                {next_page !== null ? <a href={`?page=${next_page}`}>Ältere Beiträge 🡒</a> : ""}
+            </div>
+        </div>
     )
 }
