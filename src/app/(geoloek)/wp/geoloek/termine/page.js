@@ -59,7 +59,7 @@ const Terminliste = ({ terminliste }) => {
     return (
         <ul>
             {terminliste.map(
-                termin => <Termin key={termin.date+termin.description} date={termin.date} description={termin.description} infolink={termin.infolink}/>
+                termin => <Termin key={termin.date + termin.description} date={termin.date} description={termin.description} infolink={termin.infolink} />
             )}
         </ul>
     )
