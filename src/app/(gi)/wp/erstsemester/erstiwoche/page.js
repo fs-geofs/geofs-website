@@ -25,7 +25,7 @@ export default async function Content() {
                 Diese findet immer in der Woche vor Vorlesungsbeginn statt.
                 <div />
                 <div className={styles.Textblock}>
-                    <em>Nächset Ersti-Woche</em>  (Wintersemester {erstiwoche.year}) also vom {erstiwoche.start} – {erstiwoche.end}.
+                    <em>Nächse Ersti-Woche</em>  (Wintersemester {erstiwoche.year}) also vom {erstiwoche.start} – {erstiwoche.end}.
                 </div>
             </div>
             <div className={styles.Textblock}>
