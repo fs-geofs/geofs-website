@@ -1,33 +1,21 @@
 import styles from "@/app/page.module.css";
+import error_data from "./termine_data_error.json"
 
-export default function Page() {
+import { BACKEND_BASE } from "@/app/BACKEND_URL";
 
-    const termine = {
-        stand: "01.01.1901",
-        fstermine: [
-            {
-                date: "01.01.1901",
-                description: "lalala",
-                infolink: null
-            },
-            {
-                date: "01.01.1901",
-                description: "lolol",
-                infolink: "https://google.com"
+export default async function Page() {
+
+    var termine = {}
+        try {
+            const resp = await fetch(`${BACKEND_BASE}/geoloek_termine`, { cache: "no-store" })
+            if (resp.status != 200) {
+                throw new Error();
+            } else {
+                var termine = await resp.json()
             }
-        ],
-        other: [
-            {
-                date: "Donenrstags 10-14 Uhr",
-                description: "Donnerstags 10-14 Uhr",
-                infolink: "https://www.uni-muenster.de/Nachhaltigkeit/brotzeitkolloquium.html"
-            },
-            {
-                date: "Jeden letzten Freitag im Monat",
-                description: "Offene Gesprächsrunde zum Thema \"Studieren mit Autismus\""
-            }
-        ]
-    }
+        } catch {
+            var termine = { ...error_data }
+        }
 
     return (
         <>
