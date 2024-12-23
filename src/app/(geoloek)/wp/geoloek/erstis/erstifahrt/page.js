@@ -1,11 +1,27 @@
 import styles from "@/app/page.module.css";
+import error_data from "./erstiwochenende_data_error.json"
 
-export default function Page() {
+import { BACKEND_BASE } from "@/app/BACKEND_URL";
+
+export default async function Page() {
+
+    var erstiwochenende = {}
+    try {
+        const resp = await fetch(`${BACKEND_BASE}/erstiwochenende`, { cache: "no-store" })
+        if (resp.status != 200) {
+            throw new Error();
+        } else {
+            var erstiwochenende = await resp.json()
+        }
+    } catch {
+        var erstiwochenende = { ...error_data }
+    }
+    console.log(erstiwochenende)
     return (
         <>
             <h1 className={styles.BigHeading}>Ersti-Fahrt</h1>
             <div className={styles.Textblock}>
-                Die Ersti-Fahrt XXXX findet am Wochenende vom XX.XX.XXXX bis XX.XX.XXXX statt.
+                Die Ersti-Fahrt findet am Wochenende vom <strong>{erstiwochenende.hin}</strong> bis <strong>{erstiwochenende.rueck}</strong> statt.
                 Wie (fast) immer geht es nach <a href="http://www.druebberholz.de/">Drübberholz</a> (Dörverden).
                 Mitfahren können insgesamt 70 Erstis der Studiengänge Landschaftsökologie, Geographie und Geoinformatik.
             </div>
@@ -15,7 +31,7 @@ export default function Page() {
                 Spaß dabei. Wer nicht mitfährt, ist selber Schuld, denn es wird jede Menge gefeiert!
             </div>
             <div className={styles.Textblock}>
-                Der Unkostenbeitrag beträgt (voraussichtlich) XX€ (inkl. Fahrtkosten, Verpflegung, Unterbringung in Mehrbettzimmern)
+                Der Unkostenbeitrag beträgt (voraussichtlich) {erstiwochenende.kosten}€ (inkl. Fahrtkosten, Verpflegung, Unterbringung in Mehrbettzimmern)
                 und ist in bar und möglichst passend bei der Anmeldung während des Geobrunches zu zahlen. Dies ist die einzige
                 Anmeldegelegenheit! Wer zu diesem Zeitpunkt verhindert ist, kann sich leider nicht von einer anderen Person vertreten
                 lassen. Die Anmeldung ist verbindlich. Wenn eine angemeldete Person an der Fahrt nicht mehr teilnehmen kann/will,
