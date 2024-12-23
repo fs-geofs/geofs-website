@@ -16,7 +16,7 @@ export default async function Page() {
     } catch {
         var erstiwochenende = { ...error_data }
     }
-    console.log(erstiwochenende)
+    
     return (
         <>
             <h1 className={styles.BigHeading}>Ersti-Fahrt</h1>
