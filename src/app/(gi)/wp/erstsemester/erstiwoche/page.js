@@ -2,6 +2,8 @@ import styles from "@/app/page.module.css"
 import { BACKEND_BASE } from "@/app/BACKEND_URL"
 import error_data from "./erstiwoche_data_error.json"
 
+import { Schedule, Locations} from "@/app/components/erstiwoche_components"
+
 export default async function Content() {
 
     var erstiwoche = {}
@@ -12,7 +14,7 @@ export default async function Content() {
         } else {
             var erstiwoche = await resp.json()
         }
-    } catch(err) {
+    } catch (err) {
         var erstiwoche = { ...error_data }
     }
 
@@ -48,81 +50,10 @@ export default async function Content() {
             </div>
             <Schedule schedule={erstiwoche.schedule} />
             <h2 className={styles.SmallHeading}>Adresskürzel, und was sich dahinter verbirgt</h2>
-            {
-                erstiwoche.locations.map(
-                    location => <Location title={location.title} erklaerung={location.erklaerung} detail={location.detail} osmlink={location.osmlink} key={location.title} />
-                )
-            }
+            <Locations locations={erstiwoche.locations} />
             <div className={styles.Textblock}>
                 Hinweis: Die Teilnahme an unserer Ersti-Woche ist nur für Studierende der Geoinformatik im ersten Semester möglich.
             </div>
-        </>
-    )
-}
-
-const Schedule = ({ schedule }) => {
-
-    const tage = ["montag", "dienstag", "mittwoch", "donnerstag", "freitag"]
-    const times = []
-    for (var i = 9; i <= 21; i++) {
-        times.push(i)
-    }
-
-    return (
-        <table className={styles.Table}>
-            <thead>
-                <tr>
-                    <td>Zeit</td>
-                    <td>Montag</td>
-                    <td>Dienstag</td>
-                    <td>Mittwoch</td>
-                    <td>Donnerstag</td>
-                    <td>Freitag</td>
-                </tr>
-            </thead>
-            <tbody>
-                {times.map(time => <Timeslot schedule={schedule} tage={tage} time={time} key={time} />)}
-            </tbody>
-        </table>
-    )
-}
-
-const Timeslot = ({ schedule, tage, time }) => {
-    return (
-        <tr>
-            {
-                <>
-                    <td>{time}</td>
-                    {
-                        tage.map(
-                            tag => schedule[tag][time] ?
-                                <Timeslotentry title={schedule[tag][time].title} detail={schedule[tag][time].detail} key={tag} /> :
-                                <td key={tag} />
-
-                        )}
-                </>
-            }
-        </tr>
-    )
-}
-
-const Timeslotentry = ({ title, detail }) => {
-    return (
-        <td>
-            <strong>{title}</strong>
-            {detail ? <><br />{detail}</> : ""}
-        </td>
-    )
-}
-
-const Location = ({ title, erklaerung, detail, osmlink }) => {
-    return (
-        <>
-            <strong>{title}: </strong>
-            {erklaerung}
-            {osmlink ? <a href={osmlink}> (Karte)</a> : ""}
-            {detail ? <><br />{detail}</> : ""}
-            <br />
         </>
     )
 }
