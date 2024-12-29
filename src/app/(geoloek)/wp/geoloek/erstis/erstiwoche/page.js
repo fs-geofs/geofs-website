@@ -10,7 +10,7 @@ export default async function Page() {
     var erstiwoche_geo = {}
     var geo_fetch_error = false
     try {
-        const resp = await fetch(`${BACKEND_BASE}/erstiwoche`, { cache: "no-store" })
+        const resp = await fetch(`${BACKEND_BASE}/geoloek_erstiwoche_geo`, { cache: "no-store" })
         if (resp.status != 200) {
             throw new Error();
         } else {
@@ -23,7 +23,7 @@ export default async function Page() {
     var erstiwoche_loek = {}
     var loek_fetch_error = false
     try {
-        const resp = await fetch(`${BACKEND_BASE}/erstiwoche`, { cache: "no-store" })
+        const resp = await fetch(`${BACKEND_BASE}/geoloek_erstiwoche_loek`, { cache: "no-store" })
         if (resp.status != 200) {
             throw new Error();
         } else {
@@ -36,7 +36,7 @@ export default async function Page() {
     var erstiwoche_2fb = {}
     var zwei_fb_fetch_error = false
     try {
-        const resp = await fetch(`${BACKEND_BASE}/erstiwoche`, { cache: "no-store" })
+        const resp = await fetch(`${BACKEND_BASE}/geoloek_erstiwoche_2fb`, { cache: "no-store" })
         if (resp.status != 200) {
             throw new Error();
         } else {
