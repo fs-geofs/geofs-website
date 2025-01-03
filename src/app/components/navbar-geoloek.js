@@ -27,7 +27,7 @@ export default function Menu() {
                             <NavDropdown.Item href="/wp/geoloek/erstis/stundenplaene">Stundenpläne</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/erstis/ersti-fragen">Ersti-Fragen</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/erstis/erstifahrt">Ersti-Fahrt</NavDropdown.Item>
-                            <NavDropdown.Item href="/wp/geoloek/erstis/material">Material</NavDropdown.Item>
+                            <NavDropdown.Item href="/wp/geoloek/erstis/ersti-heft">Ersti-Heft</NavDropdown.Item>
                         </NavDropdown>
 
                         <NavDropdown title="Studieninfos" id="basic-nav-dropdown">
@@ -40,8 +40,8 @@ export default function Menu() {
                         </NavDropdown>
 
                         <NavDropdown title="Angebote" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/wp/geoloek/praesenzzeiten">Präsenzzeiten</NavDropdown.Item>
-                            <NavDropdown.Item href="/wp/geoloek/angebote/altklausuren">Altklausuren</NavDropdown.Item>
+                            <NavDropdown.Item href="/wp/geoloek/praesenzzeiten">Präsenzzeiten</NavDropdown.Item> 
+                            <NavDropdown.Item href="/wp/geoloek/angebote/lernstoff">Lernstoff</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/angebote/fundsachen">Fundsachen</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/angebote/mailverteiler">Mail-Verteiler</NavDropdown.Item>
                         </NavDropdown>
@@ -49,9 +49,11 @@ export default function Menu() {
                         <NavDropdown title="Über uns" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/wp/geoloek/ueber-uns/was-wir-sind">Was wir sind</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/ueber-uns/organisation">Organisation</NavDropdown.Item>
-                            <NavDropdown.Item href="/wp/geoloek/ueber-uns/bufata">Bufata</NavDropdown.Item>
+                            <NavDropdown.Item href="/wp/geoloek/ueber-uns/bufata">BuFaTa</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/ueber-uns/aemter">Ämter</NavDropdown.Item>
                         </NavDropdown>
+
+                        <Nav.Link href="/wp/geoloek/awareness">Awareness</Nav.Link>
 
                         <Nav.Link href="/wp/geoloek/faq">FAQ</Nav.Link>
                         
