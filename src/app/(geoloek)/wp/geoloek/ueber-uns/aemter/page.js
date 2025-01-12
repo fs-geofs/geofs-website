@@ -43,8 +43,6 @@ const Gremien = async () => {
         <div className={styles.Textblock}>
 
             <FBR_Gremien fbr_data={data.fbr_gremien} />
-
-
             <Institutsvorstaende iv_data={data.institutsvorstaende} />
             <Pruefungsausschuesse ausschuesse_data={data.pruefungsausschuesse} />
         </div>
@@ -56,10 +54,28 @@ const FBR_Gremien = ({ fbr_data }) => {
         <div className={styles.Textblock}>
             <h2 className={styles.SmallHeading}>Fachbereichsrat (FBR)</h2>
             <div className={styles.Textblock}>
-                <ul>
-                    {fbr_data.fbr.ordentlich.map(mitglied => <li key={mitglied.name}>{mitglied.name} ({mitglied.fs})</li>)}
-                    {fbr_data.fbr.stv.map(mitglied => <li key={mitglied.name}><i>(stv.) </i>{mitglied.name} ({mitglied.fs})</li>)}
-                </ul>
+                <table className={styles.Table} style={{ border: "1px solid black" }}>
+                    <thead>
+                        <tr>
+                            <td><i>ordentlich</i></td>
+                            <td><i>stv.</i></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+
+                                {fbr_data.fbr.ordentlich.map(mitglied => <div key={mitglied.name}>{mitglied.name} ({mitglied.fs})</div>)}
+
+                            </td>
+                            <td>
+
+                                {fbr_data.fbr.stv.map(mitglied => <div key={mitglied.name}>{mitglied.name} ({mitglied.fs})</div>)}
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <FBR_Gremium gremium_name="Studienbeirat" gremium_mitglieder={fbr_data.studienbeirat} />
             <FBR_Gremium gremium_name="Haushaltskommission" gremium_mitglieder={fbr_data.haushalt} />
@@ -76,10 +92,24 @@ const FBR_Gremium = ({ gremium_name, gremium_mitglieder }) => {
     return (
         <div className={styles.Textblock}>
             <h3 className={styles.VerySmallHeading}>{gremium_name}</h3>
-            <ul>
-                {gremium_mitglieder.ordentlich.map(mitglied => <li key={mitglied.name}>{mitglied.name} ({mitglied.fs})</li>)}
-                {gremium_mitglieder.stv.map(mitglied => <li key={mitglied.name}><i>(stv.) </i>{mitglied.name} ({mitglied.fs})</li>)}
-            </ul>
+            <table className={styles.Table}>
+                <thead>
+                    <tr>
+                        <td><i>ordentlich</i></td>
+                        <td><i>stv.</i></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            {gremium_mitglieder.ordentlich.map(mitglied => <div key={mitglied.name}>{mitglied.name} ({mitglied.fs})</div>)}
+                        </td>
+                        <td>
+                            {gremium_mitglieder.stv.map(mitglied => <div key={mitglied.name}>{mitglied.name} ({mitglied.fs})</div>)}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     )
 }
@@ -113,10 +143,24 @@ const Ausschuss = ({ ausschuss, ausschuss_members }) => {
     return (
         <div className={styles.Textblock}>
             <i>{ausschuss}</i>
-            <ul>
-                {ausschuss_members.ordentlich.map(member => <li key={member}>{member}</li>)}
-                {ausschuss_members.stv.map(member => <li key={member}><i>(stv.)</i> {member}</li>)}
-            </ul>
+            <table className={styles.Table}>
+                <thead>
+                    <tr>
+                        <td><i>ordentlich</i></td>
+                        <td><i>stv.</i></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            {ausschuss_members.ordentlich.map(member => <div key={member}>{member}</div>)}
+                        </td>
+                        <td>
+                            {ausschuss_members.stv.map(member => <div key={member}>{member}</div>)}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     )
 }
