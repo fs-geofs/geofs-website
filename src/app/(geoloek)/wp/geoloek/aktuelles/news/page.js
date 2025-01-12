@@ -1,12 +1,9 @@
-import styles from "@/app/page.module.css";
+import Newspage from "@/app/components/newspage"
 
-export default function Page() {
-    return(
-        <>
-            <h1 className={styles.BigHeading}>News</h1>
-            <div className={styles.Textblock}>
-                Diese Seite befindet sich aktuell noch im Aufbau.
-            </div>
-        </>
-    )
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
+
+export default async function Site({ searchParams }) {
+
+    const endpoint_url = `${BACKEND_BASE}/geoloek_news`
+    return <Newspage searchParams={searchParams} newsEndpoint={endpoint_url}/>
 }
