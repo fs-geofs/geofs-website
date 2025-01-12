@@ -20,6 +20,7 @@ export default function Page() {
                 den <a href="/wp/geoloek/praesenzzeiten">Präsenzzeiten</a> in
                 den Fachschaftsraum, ruft an oder schreibt eine <a href="/wp/geoloek/kontakt">E-Mail</a>.
             </div>
+            <img src={`/website-api/foto-geoloek`} alt="Fachschaft FSGI vomr Geo" style={{ maxWidth: "100%", height: "auto" }}/>
             <div className={styles.Textblock}>
                 <i>Eure Fachschaft GeoLök (WiSe 2024/25)</i>
             </div>
