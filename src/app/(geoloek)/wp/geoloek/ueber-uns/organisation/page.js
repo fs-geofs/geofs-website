@@ -25,7 +25,7 @@ export default async function Page() {
                 {
                     fetch_error ?
                     <FetchError /> :
-                    data.vorstand.map(rolle => <Vorstandsrolle title={rolle.title} name={rolle.name} studiengang={rolle.studiengang} />)
+                    data.vorstand.map(rolle => <Vorstandsrolle title={rolle.title} name={rolle.name} studiengang={rolle.studiengang} key={rolle.title}/>)
                 }
             </div>
 
@@ -39,7 +39,7 @@ export default async function Page() {
                 {
                     fetch_error ?
                     <FetchError /> :
-                    data.minister.map(ministerium => <Ministerium title={ministerium.title} name1={ministerium.name1} name2={ministerium.name2} />)
+                    data.minister.map(ministerium => <Ministerium title={ministerium.title} name1={ministerium.name1} name2={ministerium.name2} key={ministerium.title}/>)
                 }
             </div>
 
@@ -48,7 +48,7 @@ export default async function Page() {
                 {
                     fetch_error ?
                     <FetchError /> :
-                    data.andere_minister.map(ministerium => <Ministerium title={ministerium.title} name1={ministerium.name1} name2={ministerium.name2} />)
+                    data.andere_minister.map(ministerium => <Ministerium title={ministerium.title} name1={ministerium.name1} name2={ministerium.name2} key={ministerium.title}/>)
                 }
             </div>
 

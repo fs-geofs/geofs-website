@@ -57,8 +57,8 @@ const FBR_Gremien = ({ fbr_data }) => {
             <h2 className={styles.SmallHeading}>Fachbereichsrat (FBR)</h2>
             <div className={styles.Textblock}>
                 <ul>
-                    {fbr_data.fbr.ordentlich.map(mitglied => <li>{mitglied.name} ({mitglied.fs})</li>)}
-                    {fbr_data.fbr.stv.map(mitglied => <li><i>(stv.) </i>{mitglied.name} ({mitglied.fs})</li>)}
+                    {fbr_data.fbr.ordentlich.map(mitglied => <li key={mitglied.name}>{mitglied.name} ({mitglied.fs})</li>)}
+                    {fbr_data.fbr.stv.map(mitglied => <li key={mitglied.name}><i>(stv.) </i>{mitglied.name} ({mitglied.fs})</li>)}
                 </ul>
             </div>
             <FBR_Gremium gremium_name="Studienbeirat" gremium_mitglieder={fbr_data.studienbeirat} />
@@ -77,8 +77,8 @@ const FBR_Gremium = ({ gremium_name, gremium_mitglieder }) => {
         <div className={styles.Textblock}>
             <h3 className={styles.VerySmallHeading}>{gremium_name}</h3>
             <ul>
-                {gremium_mitglieder.ordentlich.map(mitglied => <li>{mitglied.name} ({mitglied.fs})</li>)}
-                {gremium_mitglieder.stv.map(mitglied => <li><i>(stv.) </i>{mitglied.name} ({mitglied.fs})</li>)}
+                {gremium_mitglieder.ordentlich.map(mitglied => <li key={mitglied.name}>{mitglied.name} ({mitglied.fs})</li>)}
+                {gremium_mitglieder.stv.map(mitglied => <li key={mitglied.name}><i>(stv.) </i>{mitglied.name} ({mitglied.fs})</li>)}
             </ul>
         </div>
     )
@@ -114,8 +114,8 @@ const Ausschuss = ({ ausschuss, ausschuss_members }) => {
         <div className={styles.Textblock}>
             <i>{ausschuss}</i>
             <ul>
-                {ausschuss_members.ordentlich.map(member => <li>{member}</li>)}
-                {ausschuss_members.stv.map(member => <li><i>(stv.)</i> {member}</li>)}
+                {ausschuss_members.ordentlich.map(member => <li key={member}>{member}</li>)}
+                {ausschuss_members.stv.map(member => <li key={member}><i>(stv.)</i> {member}</li>)}
             </ul>
         </div>
     )
