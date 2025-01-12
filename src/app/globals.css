@@ -66,12 +66,23 @@ body {
   margin-right: auto;
 }
 
-#Content {
+#ContentGI,
+#ContentGEOLOEK {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 50px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#ContentGEOLOEK a {
+  color: #6FAB00;
+  text-decoration: none;
+}
+
+#ContentGEOLOEK a:hover {
+  color: #ea9629;
+  text-decoration: underline;
 }
 
 /*
