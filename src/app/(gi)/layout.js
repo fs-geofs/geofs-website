@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <Header />
       <div id="Page">
         <Menu />
-        <div id="Content">
+        <div id="ContentGI">
           {children}
         </div>
       </div>
