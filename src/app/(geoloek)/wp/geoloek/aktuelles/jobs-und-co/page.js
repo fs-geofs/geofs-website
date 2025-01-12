@@ -1,12 +1,7 @@
-import styles from "@/app/page.module.css";
+import { BACKEND_BASE } from "@/app/BACKEND_URL"
+import Jobpage from "@/app/components/jobspage"
 
-export default function Page() {
-    return(
-        <>
-            <h1 className={styles.BigHeading}>Jobs & Co.</h1>
-            <div className={styles.Textblock}>
-                Diese Seite befindet sich aktuell noch im Aufbau.
-            </div>
-        </>
-    )
+export default async function Site() {
+    const jobs_endpiont_url = `${BACKEND_BASE}/geoloek_joblistings`
+    return <Jobpage backend_jobs_endpoint={jobs_endpiont_url} />
 }
