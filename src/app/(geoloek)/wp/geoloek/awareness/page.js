@@ -1,7 +1,7 @@
 import styles from "@/app/page.module.css";
 import Image from 'next/image'
-import Awareness_1 from './awareness_1.jpg'
-import Awareness_2 from './awareness_2.jpg'
+import Awareness_1 from './Awareness_1.jpg'
+import Awareness_2 from './Awareness_2.jpg'
 export default function Page() {
     return(
         <>
