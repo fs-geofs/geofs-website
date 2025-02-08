@@ -46,7 +46,7 @@ export default function Page() {
             <hr></hr>
             <h2 className={styles.SmallHeading}>Wie funktioniert das mit den Nebenfächern?</h2>
             <div className={styles.Textblock}>
-                In der O-Woche stellen wir euch alle Nebenfächer und die Infos zur "Nebenfachwahl" vor. Zusammengefasst sind die Nebenfächer auch
+                In der O-Woche stellen wir euch alle Nebenfächer und die Infos zur &bdquo;Nebenfachwahl&rdquo; vor. Zusammengefasst sind die Nebenfächer auch
                 im <a href="/wp/geoloek/erstis/ersti-heft" target="_blank">Ersti-Heft</a>.
                 Am besten schaut ihr aber auf der Homepage des <a href="https://www.uni-muenster.de/Geographie/" target="_blank">IfG</a> oder
                 in eurer <a href="https://www.uni-muenster.de/Geographie/studium/studiengaenge.html" target="_blank">Prüfungsordnung</a> nach.
