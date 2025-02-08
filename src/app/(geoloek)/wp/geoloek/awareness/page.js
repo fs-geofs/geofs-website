@@ -1,7 +1,10 @@
 import styles from "@/app/page.module.css";
+import localStyles from "./page.module.css"
+
 import Image from 'next/image'
 import Awareness_1 from './Awareness_1.jpg'
 import Awareness_2 from './Awareness_2.jpg'
+
 export default function Page() {
     return (
         <>
@@ -66,24 +69,22 @@ export default function Page() {
                     <li>Licherketten</li>
                     <li>Luisa-ist-hier-Schilder</li>
                 </ul>
-                <div className="image-container">
-                    <figure>
+                <div className={localStyles.imagecontainer}>
+                    <figure className={localStyles.figureBox}>
                         <Image
-                            src={Awareness_1.src} // Die URL des Bildes
+                            src={Awareness_1} // Die URL des Bildes
                             alt="Bild der Awareness-Warnweste" // Alternativtext
-                            width={200}
-                            height={300}
+                            className={localStyles.figure}
                         />
-                        <figcaption>Awareness-Warnweste</figcaption>
+                        <figcaption className={localStyles.caption}>Awareness-Warnweste</figcaption>
                     </figure>
-                    <figure>
+                    <figure className={localStyles.figureBox}>
                         <Image
-                            src={Awareness_2.src} // Die URL des Bildes
+                            src={Awareness_2} // Die URL des Bildes
                             alt="Bild der Awareness-Lichterkette" // Alternativtext
-                            width={200}
-                            height={300}
+                            className={localStyles.figure}
                         />
-                        <figcaption>Awareness-Licherkette</figcaption>
+                        <figcaption className={localStyles.caption}>Awareness-Licherkette</figcaption>
                     </figure>
                 </div>
                 <div className={styles.Textblock}>
