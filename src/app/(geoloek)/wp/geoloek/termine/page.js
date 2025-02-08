@@ -1,21 +1,22 @@
 import styles from "@/app/page.module.css";
-import error_data from "./termine_data_error.json"
+import FetchError from "@/app/components/error_fetching";
 
 import { BACKEND_BASE } from "@/app/BACKEND_URL";
 
 export default async function Page() {
 
     var termine = {}
-        try {
-            const resp = await fetch(`${BACKEND_BASE}/geoloek_termine`, { cache: "no-store" })
-            if (resp.status != 200) {
-                throw new Error();
-            } else {
-                var termine = await resp.json()
-            }
-        } catch {
-            var termine = { ...error_data }
+    var successFetching = true
+    try {
+        const resp = await fetch(`${BACKEND_BASE}/geoloek_termine`, { cache: "no-store" })
+        if (resp.status != 200) {
+            throw new Error();
+        } else {
+            var termine = await resp.json()
         }
+    } catch {
+        successFetching = false
+    }
 
     return (
         <>
@@ -28,16 +29,16 @@ export default async function Page() {
                 Termine der Facschaft und des Fachbereichs:
             </div>
             <div className={styles.Textblock}>
-                <Terminliste terminliste={termine.fstermine} />
+                {successFetching ? <Terminliste terminliste={termine.fstermine} /> : <FetchError />}
             </div>
             <div className={styles.Textblock}>
                 Das könnte für euch auch interessant sein:
             </div>
             <div className={styles.Textblock}>
-                <Terminliste terminliste={termine.other} />
+                {successFetching ? <Terminliste terminliste={termine.other} /> : <FetchError />}
             </div>
             <div className={styles.Textblock}>
-                <i>(Stand: {termine.stand})</i>
+                {successFetching ? <i>(Stand: {termine.stand})</i> : <FetchError />}
             </div>
         </>
     )
