@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import Menu from "@/app/components/navbar-geoloek"
+import Footer from "@/app/components/footer"
 
 export const metadata = {
   title: "Fachschaft Geographie-Landschaftsökologie Münster",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <div id="ContentGEOLOEK">
           {children}
         </div>
+        <Footer name="GeoLoek"/>
       </div>
     </>
   );
