@@ -93,12 +93,12 @@ export default function Page() {
             </div>
             <h2 className={styles.SmallHeading}>Luisa ist hier</h2>
             <div className={styles.Textblock}>
-                Die Fachschaft GeoLök ist Teil der Kampagne "<a href="https://luisa-ist-hier.de/" target="_blank">Luisa ist hier!</a>" vom <a href="https://www.frauennotruf-muenster.de/" target="_blank">Frauen-Notruf Münster</a>. Diese
+                Die Fachschaft GeoLök ist Teil der Kampagne &bdquo;<a href="https://luisa-ist-hier.de/" target="_blank">Luisa ist hier!</a>&rdquo; vom <a href="https://www.frauennotruf-muenster.de/" target="_blank">Frauen-Notruf Münster</a>. Diese
                 Kampagne richtet sich explizit an Frauen und Mädchen in der Partyszene und im öffentlichen Raum.
             </div>
             <div>
                 Es geht darum, dass man sich bei Belästigung, Unwohlsein oder Grenzüberschreitungen
-                mit der Codefrage „Ist Luisa hier?“ an gekennzeichnetes und geschultes Personal wenden kann.
+                mit der Codefrage &bdquo;Ist Luisa hier?&rdquo; an gekennzeichnetes und geschultes Personal wenden kann.
                 Dieses weiß dann, dass du Hilfe brauchst und kann dich diskret und schnell aus der Situation herausbringen.
                 Mehr Infos zur Kampagne gibt es auf der <a href="https://luisa-ist-hier.de/" target="_blank">Website</a>!
             </div>
