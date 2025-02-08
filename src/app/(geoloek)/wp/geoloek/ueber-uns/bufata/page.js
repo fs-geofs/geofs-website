@@ -27,10 +27,11 @@ export default function Page() {
             <h2 className={styles.SmallHeading}>BuFaTa Münster 2015</h2>
             <div className={styles.Textblock}>
                 <Image
-                    src={bufata_2015.src} // Die URL des Bildes
+                    src={bufata_2015} // Die URL des Bildes
                     alt="Bufata Münster 2015" // Alternativtext
-                    width={900} // Breite des Bildes (anpassen nach Bedarf)
-                    height={500} // Höhe des Bildes (anpassen nach Bedarf)
+                    style={{width: "100%", height: "auto"}}
+                    //width={900} // Breite des Bildes (anpassen nach Bedarf)
+                    //height={500} // Höhe des Bildes (anpassen nach Bedarf)
                 />
                 An der Bundesfachschaftentagung 2015 in Münster waren 130 Studierende aus Deutschland, Österreich und der Schweiz beteiligt. Danke für ein großartiges Wochenende!
             </div>
