@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "BACKEND_URL=localhost BACKEND_PORT=5000 PROTOKOLL_ENDPOINT=https://giv-geofs.uni-muenster.de/protokolle/ next dev",
+    "windev": "set BACKEND_URL=localhost&& set BACKEND_PORT=5000&& set PROTOKOLL_ENDPOINT=https://giv-geofs.uni-muenster.de/protokolle/&& next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
