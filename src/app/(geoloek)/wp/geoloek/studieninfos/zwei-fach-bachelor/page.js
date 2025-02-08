@@ -82,7 +82,7 @@ export default function Page() {
             </div>
             <div className={styles.Textblock}>
                 Das Ergebnis findest du in der darauffolgenden Woche im
-                Learnwebkurs <a href="https://sso.uni-muenster.de/LearnWeb/learnweb2/course/view.php?id=38880" target="_blank">Allgemeine Studieninformationen Geographie: "Das schwarze Brett"</a> in
+                Learnwebkurs <a href="https://sso.uni-muenster.de/LearnWeb/learnweb2/course/view.php?id=38880" target="_blank">Allgemeine Studieninformationen Geographie: &bdquo;Das schwarze Brett&rdquo;</a> in
                 der Rubrik „Aktuelle Informationen zu Studium und Lehre“.
                 Das Passwort für den Learnwebkurs erhaltet ihr auf Anfrage oder von euren Friends ;D.
             </div>
@@ -100,7 +100,7 @@ export default function Page() {
             </div>
             <div className={styles.Textblock}>
                 Die Anmeldung läuft über das <a href="https://studium.uni-muenster.de/qisserver/" target="_blank">QISPOS-Portal</a> unter
-                "Meine Funktionen" → „Prüfungsverwaltung“ → „An- und Abmeldung zu Studienleistungen und prüfungsrelevanten Leistungen“.
+                &bdquo;Meine Funktionen&rdquo; → &bdquo;Prüfungsverwaltung&rdquo; → &bdquo;An- und Abmeldung zu Studienleistungen und prüfungsrelevanten Leistungen&rdquo;.
                 Bei Problemen wendet Euch rechtzeitig an das <a href="https://www.uni-muenster.de/PAMathNat/" target="_blank">Prüfungsamt</a>.
             </div>
             <h2 className={styles.BigHeading}>Exmatrikulation</h2>
