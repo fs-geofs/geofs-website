@@ -6,7 +6,7 @@ export default function Page() {
             <h1 className={styles.BigHeading}>FAQ</h1>
             <h2 className={styles.SmallHeading}>Wo muss ich hin?</h2>
             <div className={styles.Textblock}>
-            Grundsätzlich kannst du mit allen Fragen und Problemen erst einmal zu uns kommen – 
+            Grundsätzlich kannst du mit allen Fragen und Problemen erst einmal zu <a href="/wp/geoloek/kontakt" target="_blank">uns</a> kommen – 
             frag dich einfach zur Fachschaft durch! Das Gleiche gilt auch fürs <a href="https://www.uni-muenster.de/Frontoffice-geoloek/" target="_blank">Front Office</a>. 
             Bei spezielleren Anliegen (z.B. BaFöG-Nachweise, Anrechnungen von Leistungen..) 
             hilft oft der Gang zur Studienfachberatung. Studienberater*innen sind:
@@ -31,38 +31,30 @@ export default function Page() {
             <hr></hr>
             <h2 className={styles.SmallHeading}>Wie funktionieren Seminarwahlen?</h2>
             <div className={styles.Textblock}>
-                <ul>
-                    <li>Erstes Semester: Infos und „analoge“ Seminarwahl in der <a href="/wp/geoloek/erstis/erstiwoche" target="_blank">Erstiwoche</a>. Da 
-                    klärt sich alles auf! Unbedingt kommen!</li>
-                    <li>Grundsätzlich verläuft die Anmeldung zu Veranstaltungen für Bachelor- 
-                        und Master-Studiengänge über <a href="https://studium.uni-muenster.de/qisserver/" target="_blank">HISLSF</a>. 
-                        Die HISLSF-Anmeldephase ist i.d.R immer drei Wochen vor dem Beginn der vorlesungsfreien Zeit.</li> 
-                </ul>
+            Erstes Semester: Infos und „analoge“ Seminarwahl in der <a href="/wp/geoloek/erstis/erstiwoche" target="_blank">Erstiwoche</a>. Da 
+            klärt sich alles auf! Unbedingt kommen! Grundsätzlich verläuft die Anmeldung zu Veranstaltungen für Bachelor- und Master-Studiengänge 
+            über <a href="https://studium.uni-muenster.de/qisserver/" target="_blank">HISLSF</a>. 
+            Die HISLSF-Anmeldephase ist i.d.R immer drei Wochen vor dem Beginn der vorlesungsfreien Zeit.
             </div>
             <hr></hr>
             <h2 className={styles.SmallHeading}>Wo komme ich an Altklausuren?</h2>
             <div className={styles.Textblock}>
-                <ul>
-                    <li>Schau dazu mal beim Reiter <a href="/wp/geoloek/angebote/lernstoff" target="_blank">Lernstoff</a> vorbei.</li>
-                    <li>Wir <strong>bitten</strong> euch im Austausch dafür neue Protokolle/Altklausuren abzugeben!!</li>
-                    <li>Wichtig: wir benötigen immer aktuelle Protokolle! Für euch und eure Komilliton*innen</li>
-                </ul>
+            Schau dazu mal beim Reiter <a href="/wp/geoloek/angebote/lernstoff" target="_blank">Lernstoff</a> vorbei.
+            Wir <strong>bitten</strong> euch im Austausch dafür neue Protokolle/Altklausuren abzugeben!! <strong>Ganz wichtig:</strong> Wir 
+            benötigen immer aktuelle Protokolle! Für euch und eure Komilliton*innen.
             </div>
             <hr></hr>
             <h2 className={styles.SmallHeading}>Wie funktioniert das mit den Nebenfächern?</h2>
             <div className={styles.Textblock}>
-                <ul>
-                    <li>In der O-Woche stellen wir euch alle Nebenfächer und die Infos zur "Nebenfachwahl" vor</li>
-                    <li>Zusammengefasst sind die Nebenfächer auch im <a href="/wp/geoloek/erstis/ersti-heft" target="_blank">Ersti-Heft</a></li>
-                    <li>Am besten schaut ihr auf der Homepage des <a href="https://www.uni-muenster.de/Geographie/" target="_blank">IfG</a> oder in eurer <a href="https://www.uni-muenster.de/Geographie/studium/studiengaenge.html" target="_blank">Prüfungsordnung</a> nach</li>
-                </ul>
+            In der O-Woche stellen wir euch alle Nebenfächer und die Infos zur "Nebenfachwahl" vor. Zusammengefasst sind die Nebenfächer auch 
+            im <a href="/wp/geoloek/erstis/ersti-heft" target="_blank">Ersti-Heft</a>.
+            Am besten schaut ihr aber auf der Homepage des <a href="https://www.uni-muenster.de/Geographie/" target="_blank">IfG</a> oder 
+            in eurer <a href="https://www.uni-muenster.de/Geographie/studium/studiengaenge.html" target="_blank">Prüfungsordnung</a> nach.
             </div>
             <hr></hr>
             <h2 className={styles.SmallHeading}>Wo finde ich was? (Studierendensekretariat, Dekanat, Prüfungsamt)</h2>
             <div className={styles.Textblock}>
-                <ul>
-                    <li>Siehe <a href="/wp/geoloek/studieninfos/links" target="_blank">Linkliste</a> auf unserer Hompage</li>
-                </ul>
+            Siehe <a href="/wp/geoloek/studieninfos/links" target="_blank">Linkliste</a> auf unserer Hompage
             </div>
             <hr></hr>
             <h2 className={styles.SmallHeading}>In welchem Semester beginnt das Studium regulär?</h2>
@@ -118,7 +110,7 @@ export default function Page() {
             </div>
             <div>
             Den <a href="https://www.uni-muenster.de/imperia/md/content/geowissenschaften/entlastungsbescheinigung.pdf" target="_blank">Vordruck gibt es hier</a>. Damit musst du dann 
-            zum Labor und in die Bibliothek. Den abschließenden Stempel gibt es bei Frau Kreulich.
+            zum Labor. Den abschließenden Stempel gibt es bei Frau Kreulich.
             </div>
             <hr></hr>
             <h2 className={styles.SmallHeading}>Ich habe da etwas verloren…</h2>

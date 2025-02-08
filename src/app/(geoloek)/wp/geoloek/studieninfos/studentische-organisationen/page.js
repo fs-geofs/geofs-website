@@ -1,5 +1,10 @@
 import styles from "@/app/page.module.css";
-
+import Image from 'next/image'
+import logo_egea from './logo_egea.png'
+import logo_weitblick from './logo_weitblick.jpg'
+import logo_geodach from './logo_geodach.png'
+import logo_radioq from './logo_radioq.png'
+import logo_asta from './logo_asta.png'
 export default function Page() {
     return(
         <>
@@ -10,9 +15,14 @@ export default function Page() {
             Gruppen für Studis der Geographie und Landschaftsökologie haben wir hier aufgezählt:
             </div>
             <div className={styles.Textblock}>
-            
             </div>
             <hr></hr>
+            <Image
+                src={logo_egea.src} // Die URL des Bildes
+                alt="Logo Egea" // Alternativtext
+                width={200} // Breite des Bildes (anpassen nach Bedarf)
+                height={100} // Höhe des Bildes (anpassen nach Bedarf)
+            />
             <div className={styles.Textblock}>
             Die <strong>European Geography Association (EGEA)</strong> ist ein europäisches Netzwerk für Geographiestudierende 
             und junge Gegraph*innen mit dem Ziel Wissen auszutauschen, kulturelle Verständigung zu fördern und 
@@ -32,6 +42,12 @@ export default function Page() {
             Kontakt: <a href="mailto:muenster@egea.eu">muenster@egea.eu</a>
             </div>
             <hr></hr>
+            <Image
+                src={logo_weitblick.src} // Die URL des Bildes
+                alt="Logo Weitblick" // Alternativtext
+                width={200} // Breite des Bildes (anpassen nach Bedarf)
+                height={130} // Höhe des Bildes (anpassen nach Bedarf)
+            />
             <div className={styles.Textblock}>
             <strong>Weitblick</strong> ist eine Studierendeninitiative, die sich weltweit für gerechte Bildungschancen einsetzt.
             </div>
@@ -48,6 +64,12 @@ export default function Page() {
             Kontakt: <a href="mailto:muenster@weitblicker.org">muenster@weitblicker.org</a>
             </div>
             <hr></hr>
+            <Image
+                src={logo_geodach.src} // Die URL des Bildes
+                alt="Logo Geodach" // Alternativtext
+                width={230} // Breite des Bildes (anpassen nach Bedarf)
+                height={130} // Höhe des Bildes (anpassen nach Bedarf)
+            />
             <div className={styles.Textblock}>
             Eine wichtige Adresse könnte für euch <strong>GeoDACH e.V.</strong> sein!
             </div>
@@ -78,6 +100,12 @@ export default function Page() {
             Für weitere Infos schaut auf der <strong>Homepage</strong> von <a href="https://geodach.org/" target="_blank">GeoDACH</a> vorbei!
             </div>
             <hr></hr>
+            <Image
+                src={logo_radioq.src} // Die URL des Bildes
+                alt="Logo RadioQ" // Alternativtext
+                width={160} // Breite des Bildes (anpassen nach Bedarf)
+                height={70} // Höhe des Bildes (anpassen nach Bedarf)
+            />
             <div className={styles.Textblock}>
             Eine weitere interessante Organisation könnte für euch <a href="https://www.radioq.de/" target="_blank">RadioQ</a> sein.
             </div>
@@ -89,8 +117,15 @@ export default function Page() {
             Natürlich bei uns in der <strong>Fachschaft!...</strong>
             </div>
             <div className={styles.Textblock}>
-            oder auch beim <strong>AStA!</strong>
+            oder auch beim...
             </div>
+            <Image
+                src={logo_asta.src} // Die URL des Bildes
+                alt="Logo Asta" // Alternativtext
+                width={120} // Breite des Bildes (anpassen nach Bedarf)
+                height={40} // Höhe des Bildes (anpassen nach Bedarf)
+            />
+            <div className={styles.Textblock}></div>
             <div className={styles.Textblock}>
             Der <strong>Allgemeine Studierendenausschuss (AStA)</strong> ist die Vertretung der Studierenden 
             an der Universität Münster. Er wird als Exekutivorgan für ein Jahr vom <a href="stupa.ms" target="_blank">Studierendenparlament</a> gewählt.
@@ -101,13 +136,12 @@ export default function Page() {
             Student*innen haben ihre eigenen Vertretungen in autonomen Referaten.
             </div>
             <div className={styles.Textblock}>
-            Der AStA versucht zum einen, den Studierenden direkt im Einzelfall zu helfen und bietet so zum Beispiel 
-            <a href="https://asta.ms/service" target="_blank">kostenlose Beratungen</a> an. 
+            Der AStA versucht zum einen, den Studierenden direkt im Einzelfall zu helfen und bietet so zum Beispiel <a href="https://asta.ms/service" target="_blank">kostenlose Beratungen</a> an. 
             Der AStA arbeitet aber auch politisch, um die Bedingungen für die Studierenden zu verbessern. So konnte
             beispielsweise durch den Zusammenschluss mehrerer ASten in Deutschland ein deutschlandweites Semesterticket ermöglicht werden.
             </div>
             <div className={styles.Textblock}>
-            Für weitere Infos schaut auf der Homepage des <a href="asta.ms" target="_blank">AStA</a> vorbei!
+            Für weitere Infos schaut auf der Homepage des <a href="https://asta.ms" target="_blank">AStA</a> vorbei!
             </div>
             <div className={styles.Textblock}>
             Kontakt: <a href="mailto:asta.buero@uni-muenster.de">asta.buero@uni-muenster.de</a>

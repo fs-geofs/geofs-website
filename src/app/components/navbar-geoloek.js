@@ -33,8 +33,8 @@ export default function Menu() {
                         <NavDropdown title="Studieninfos" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/wp/geoloek/studieninfos/geographie">Geographie</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/studieninfos/landschaftsoekologie">Landschaftsökologie </NavDropdown.Item>
-                            <NavDropdown.Item href="/wp/geoloek/studieninfos/lehramt-2-fach">Lehramt & 2-Fach</NavDropdown.Item>
-                            <NavDropdown.Item href="/wp/geoloek/studieninfos/ausland">Ausland</NavDropdown.Item>
+                            <NavDropdown.Item href="/wp/geoloek/studieninfos/zwei-fach-bachelor">Zwei-Fach-Bachelor Geographie</NavDropdown.Item>
+                            <NavDropdown.Item href="/wp/geoloek/studieninfos/erasmus-ausland">Erasmus und Ausland</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/studieninfos/studentische-organisationen">Studentische Organisationen</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/studieninfos/links">Links</NavDropdown.Item>
                         </NavDropdown>
@@ -42,7 +42,6 @@ export default function Menu() {
                         <NavDropdown title="Angebote" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/wp/geoloek/praesenzzeiten">Präsenzzeiten</NavDropdown.Item> 
                             <NavDropdown.Item href="/wp/geoloek/angebote/lernstoff">Lernstoff</NavDropdown.Item>
-                            <NavDropdown.Item href="/wp/geoloek/angebote/fundsachen">Fundsachen</NavDropdown.Item>
                             <NavDropdown.Item href="/wp/geoloek/angebote/mailverteiler">Mail-Verteiler</NavDropdown.Item>
                         </NavDropdown>
 

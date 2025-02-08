@@ -6,7 +6,7 @@ export default function Page() {
             <h1 className={styles.BigHeading}>B.Sc. Geographie</h1>
             <h2 className={styles.SmallHeading}>... was erwartet mich?</h2>
             <div className={styles.Textblock}>
-            Der Schwerpunkt der Geographie im Bachelorstudiengang liegt in Münster auf der Humangeographie. 
+            Im Bachelorstudiengang der Geographie in Münster liegt der Schwerpunkt auf der Humangeographie. 
             Die Forschungsschwerpunkte am Institut sind in den vier Arbeitsgruppen gegliedert und liegen in den Bereichen 
             Politische Geographie/Sozialgeographie, Wirtschaftsgeographie und Globalisierungsforschung,
             kritischer Stadtgeographie sowie Raumplanung und Nachhaltigkeitsforschung.
@@ -19,12 +19,10 @@ export default function Page() {
                     <li className={styles.Textblock}>Im <strong>Kernbereich</strong> sind zwei der insgesamt 14 Module aus dem Bereich der Physischen Geographie und 
                         zwei Module aus dem Bereich Geoinformatik zu belegen. In den Veranstaltungen erhaltet ihr einen 
                         Überblick über die Physische Geographie sowie die Ökologische Planung und ihr erlernt den Umgang 
-                        mit Geoinformationssystemen und statistischen Programmen. Die Inhalte sind, obwohl nicht (mehr) 
-                        orginäre geographische, sehr wichtig und müssen bei vielen geographischen Fragestellungen mit 
-                        einbezogen werden. Die anderen zehn Module haben einen geographischen Inhalt. 
+                        mit Geoinformationssystemen und statistischen Programmen. Die anderen zehn Module haben einen eher humangeographischen Inhalt. 
                         In den meisten Modulen könnt ihr die Inhalte der Seminare und teilweise auch Vorlesungen nach euren 
                         Vorlieben wählen, jedoch ist die Wahl immer vom Angebot des Instituts abhängig. 
-                        Hinzu kommt ein vier-wöchiges Praktikum – um dieses müsst Ihr euch jedoch selbst kümmern – 
+                        Hinzu kommt ein vier-wöchiges Praktikum – um dieses müsst Ihr euch selbst kümmern – 
                         und am Ende die Bachelorarbeit.</li>
                     <li className={styles.Textblock}>Das <strong>Nebenfach</strong> macht mit 30 Leistungspunkten immerhin 1/6 eures Studiums aus und gibt euch die 
                         Möglichkeit weitere Schwerpunkte in eurem Studium zu setzen. Wenn ihr ein wenig mehr Physisches hören wollt, 
@@ -82,10 +80,10 @@ export default function Page() {
             Wartesemester vorweisen müsst, um aufgenommen zu werden. Dabei sind die Bewerbungsfristen zu beachten!
             </div>
             <div className={styles.Textblock}>
-                Im Wintersemester 2024/25 wurden im Hauptverfahren alle Bewerber*innen zugelassen,
-                die einen Abischnitt von 2,7 haben. Eine Übersicht über die zulassungsbeschränkten Studiengänge
-                an der Uni Münster findest du <a href="https://www.uni-muenster.de/studieninteressierte/zulassung/auswahlgrenzen/index.html" target="_blank">hier</a>. Die
-                Notengrenzen der vorherigen Jahre sind allerdings nur eine Orientierung und ändern sich jährlich, je nach Nachfrage.                
+            Im Wintersemester 2024/25 wurden im Hauptverfahren alle Bewerber*innen zugelassen,
+            die einen Abischnitt von 2,7 haben. Eine Übersicht über die zulassungsbeschränkten Studiengänge
+            an der Uni Münster findest du <a href="https://www.uni-muenster.de/studieninteressierte/zulassung/auswahlgrenzen/index.html" target="_blank">hier</a>. Die
+            Notengrenzen der vorherigen Jahre sind allerdings nur eine Orientierung und ändern sich jährlich, je nach Nachfrage.                
             </div>
             <div className={styles.Textblock}>
             Bewerber*innen ohne Abitur können nur unter besonderen Voraussetzungen aufgenommen werden. 
@@ -180,9 +178,9 @@ export default function Page() {
             <h1 className={styles.BigHeading}>Exmatrikulation</h1>
             <div className={styles.Textblock}>
             Für die Exmatrikulation ist eine Entlastungsbescheinigung der Institute der Lehreinheit Geowissenschaften I nötig, 
-            mit der Ihr nachweist, dass Ihr keine Bücher, Geräte oder Karten mehr entliehen haben. 
+            mit der Ihr nachweist, dass Ihr nix mehr entliehen habt. 
             Die Bescheinigung könnt Ihr hier <a href="https://www.uni-muenster.de/imperia/md/content/geowissenschaften/entlastungsbescheinigung.pdf" target="_blank">herunterladen</a>, damit 
-            müsst ihr dann zum Labor und in die Bibliothek. Den abschließenden Stempel erhaltet Ihr im 
+            müsst ihr dann zum Labor. Den abschließenden Stempel erhaltet Ihr im 
             Geschäftszimmer der Betriebseinheit der LE I bei Frau Kreulich (Raum 212).
             </div>
         </>

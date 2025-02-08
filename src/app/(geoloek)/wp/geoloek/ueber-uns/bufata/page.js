@@ -1,5 +1,6 @@
 import styles from "@/app/page.module.css";
-
+import Image from 'next/image'
+import bufata_2015 from './bufata_2015.jpg'
 export default function Page() {
     return(
         <>
@@ -25,6 +26,12 @@ export default function Page() {
             </div>
             <h2 className={styles.SmallHeading}>BuFaTa Münster 2015</h2>
             <div className={styles.Textblock}>
+            <Image
+                src={bufata_2015.src} // Die URL des Bildes
+                alt="Bufata Münster 2015" // Alternativtext
+                width={900} // Breite des Bildes (anpassen nach Bedarf)
+                height={500} // Höhe des Bildes (anpassen nach Bedarf)
+            />
             An der Bundesfachschaftentagung 2015 in Münster waren 130 Studierende aus Deutschland, Österreich und der Schweiz beteiligt. Danke für ein großartiges Wochenende!
             </div>
             <h2 className={styles.SmallHeading}>BuFaTa Münster 2025</h2>

@@ -1,6 +1,7 @@
 import styles from "@/app/page.module.css";
 import Image from 'next/image'
-import Awareness_1 from '\Users\felix\Documents\geofs-website\src\app\(geoloek)\wp\geoloek\awareness'
+import Awareness_1 from './awareness_1.jpg'
+import Awareness_2 from './awareness_2.jpg'
 export default function Page() {
     return(
         <>
@@ -9,7 +10,7 @@ export default function Page() {
             Auf dieser Seite stellen wir euch unser Awareness-Konzept vor. Im Vorhinein soll gesagt sein, dass wir dieses
             Konzept selbst aufgestellt haben und immer wieder daran arbeiten, und zwar im offenen Dialog mit der gesamten Fachschaft.
             Außerdem nehmen wir immer wieder bei Workshops zum Thema Awareness teil und versuchen uns dort bestmöglich weiterzubilden.
-            Darüber hinaus stehen wir im Austausch mit anderen Fachschaften und weiteren Awareness leistenden Gruppen.
+            Darüber hinaus stehen wir im Austausch mit anderen Fachschaften und weiteren Awareness-leistenden Gruppen.
             <div className={styles.Textblock}>
             Wir freuen uns über Kritik und Vorschläge von eurer Seite. Erreichen könnt ihr uns 
             per <a href="mailto:fsgelok@uni-muenster.de" target="_blank">Mail</a>, auf <a href="https://www.instagram.com/fs_geolok_ms/" target="_blank">Insta</a>, bei 
@@ -65,14 +66,26 @@ export default function Page() {
                     <li>Licherketten</li>
                     <li>Luisa-ist-hier-Schilder</li>
                 </ul>
-            <Image>
-                src={Awareness_1}
-                alt="Bild der Awareness-Warnweste"
-                // width={500}
-                // height={500}
-                // blurDataURL="data..."
-                // placeholder="blur" // Optional blur while loading
-            </Image>               
+                <div className="image-container">
+                <figure>
+                    <Image
+                        src={Awareness_1.src} // Die URL des Bildes
+                        alt="Bild der Awareness-Warnweste" // Alternativtext
+                        width={200}
+                        height={300}
+                    />
+                    <figcaption>Awareness-Warnweste</figcaption>
+                </figure>
+                <figure>
+                    <Image
+                        src={Awareness_2.src} // Die URL des Bildes
+                        alt="Bild der Awareness-Lichterkette" // Alternativtext
+                        width={200}
+                        height={300}
+                    />
+                    <figcaption>Awareness-Licherkette</figcaption>
+                </figure>
+                </div>
             <div className={styles.Textblock}>
             Außerdem haben wir ein Awareness-Handy. Die Telefonnummer ist für die Erstis in allen Erstigruppen
             und hängt auch immer bei unseren Veranstaltungen aus.
