@@ -37,7 +37,7 @@ export default function Page() {
             </div>
             <h2 className={styles.SmallHeading}>BuFaTa Münster 2025</h2>
             <div className={styles.Textblock}>
-                10 nach der letzten BuFaTa in Münster, genauer gesagt im Oktober 2025, fand erneut eine BuFaTa in Münster statt.
+                10 Jahre nach der letzten BuFaTa in Münster, genauer gesagt im Oktober 2025, fand erneut eine BuFaTa in Münster statt.
 
             </div>
         </>
