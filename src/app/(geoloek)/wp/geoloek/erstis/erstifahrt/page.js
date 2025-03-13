@@ -26,7 +26,7 @@ export default async function Page() {
                 Mitfahren können insgesamt 70 Erstis der Studiengänge Landschaftsökologie, Geographie und Geoinformatik.
             </div>
             <div className={styles.Textblock}>
-                Geboten wird eine Menge: Wir rennen im Wald rum, feiern, lernen Mitstudenten kennen und lieben, feiern,
+                Geboten wird eine Menge: Wir rennen im Wald rum, feiern, lernen Mitstudierende kennen und lieben, feiern,
                 lernen nützliche Dinge über Pflanzen, Tiere, Wind, Wetter und GPS-Geräte, feiern und haben viel
                 Spaß dabei. Wer nicht mitfährt, ist selber Schuld, denn es wird jede Menge gefeiert!
             </div>
