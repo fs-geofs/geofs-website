@@ -22,16 +22,16 @@ export default async function Page() {
             <h1 className={styles.BigHeading}>Ersti-Fahrt</h1>
             <div className={styles.Textblock}>
                 Die Ersti-Fahrt findet am Wochenende vom <strong>{erstiwochenende.hin}</strong> bis <strong>{erstiwochenende.rueck}</strong> statt.
-                Wie (fast) immer geht es nach <a href="http://www.druebberholz.de/">Drübberholz</a> (Dörverden).
+                Wie (fast) immer geht es nach <a href="http://www.druebberholz.de/" target="_blank">Drübberholz</a> (Dörverden).
                 Mitfahren können insgesamt 70 Erstis der Studiengänge Landschaftsökologie, Geographie und Geoinformatik.
             </div>
             <div className={styles.Textblock}>
-                Geboten wird eine Menge: Wir rennen im Wald rum, feiern, lernen Mitstudenten kennen und lieben, feiern,
+                Geboten wird eine Menge: Wir rennen im Wald rum, feiern, lernen Mitstudierende kennen und lieben, feiern,
                 lernen nützliche Dinge über Pflanzen, Tiere, Wind, Wetter und GPS-Geräte, feiern und haben viel
                 Spaß dabei. Wer nicht mitfährt, ist selber Schuld, denn es wird jede Menge gefeiert!
             </div>
             <div className={styles.Textblock}>
-                Der Unkostenbeitrag beträgt (voraussichtlich) {erstiwochenende.kosten}€ (inkl. Fahrtkosten, Verpflegung, Unterbringung in Mehrbettzimmern)
+                Der Unkostenbeitrag beträgt (voraussichtlich) <strong>{erstiwochenende.kosten}€</strong> (inkl. Fahrtkosten, Verpflegung, Unterbringung in Mehrbettzimmern)
                 und ist in bar und möglichst passend bei der Anmeldung während des Geobrunches zu zahlen. Dies ist die einzige
                 Anmeldegelegenheit! Wer zu diesem Zeitpunkt verhindert ist, kann sich leider nicht von einer anderen Person vertreten
                 lassen. Die Anmeldung ist verbindlich. Wenn eine angemeldete Person an der Fahrt nicht mehr teilnehmen kann/will,

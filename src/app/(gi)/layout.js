@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import Menu from "@/app/components/navbar-gi"
+import Footer from "@/app/components/footer"
 
 export const metadata = {
   title: "Fachschaft Geoinformatik",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <div id="ContentGI">
           {children}
         </div>
+        <Footer name="Geoinformatik"/>
       </div>
     </>
   );
