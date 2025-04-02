@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "BACKEND_URL=localhost BACKEND_PORT=5000 PROTOKOLL_ENDPOINT=https://giv-geofs.uni-muenster.de/protokolle/ next dev",
+    "dev": "BACKEND_URL=localhost BACKEND_PORT=5000 PROTOKOLL_ENDPOINT=https://giv-geofs.uni-muenster.de/protokolle/ next dev --turbopack",
     "windev": "set BACKEND_URL=localhost&& set BACKEND_PORT=5000&& set PROTOKOLL_ENDPOINT=https://giv-geofs.uni-muenster.de/protokolle/&& next dev",
     "build": "next build",
     "start": "next start",
@@ -12,14 +12,14 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "isomorphic-dompurify": "^2.16.0",
-    "next": "^14.2.26",
-    "react": "^18",
+    "next": "15.2.4",
+    "react": "19.1.0",
     "react-bootstrap": "^2.10.5",
-    "react-dom": "^18",
+    "react-dom": "19.1.0",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.15"
+    "eslint-config-next": "15.2.4"
   }
 }
