@@ -1,6 +1,7 @@
 import "@/app/globals.css";
 import Menu from "@/app/components/navbar-gi"
 import Footer from "@/app/components/footer"
+import Link from "next/link";
 
 export const metadata = {
   title: "Fachschaft Geoinformatik",
@@ -26,9 +27,9 @@ export default function RootLayout({ children }) {
 function Header() {
   return (
     <header className="Header" id="HeaderGI">
-      <a href="/">
+      <Link href="/">
         <h1>Fachschaft Geoinformatik Münster</h1>
-      </a>
+      </Link>
     </header>
   )
 }

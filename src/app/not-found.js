@@ -1,4 +1,5 @@
 import styles from "@/app/page.module.css"
+import Link from "next/link"
 
 /*
 Diese Seite wird angezeigt bei einem 404 Error,
@@ -12,8 +13,8 @@ export default function Content(){
             <h2 className={styles.SmallHeading}>Seite nicht gefunden</h2>
             <h2 className={styles.SmallHeading}>Page not Found</h2>
             <div className={styles.Textblock}>
-                <a href="/"> Startseite Fachschaft Geoinformatik</a> <br/>
-                <a href="/wp/geoloek">Startseite Fachschaft GeoLök</a>
+                <Link href="/"> Startseite Fachschaft Geoinformatik</Link> <br/>
+                <Link href="/wp/geoloek">Startseite Fachschaft GeoLök</Link>
             </div>
         </>
     )

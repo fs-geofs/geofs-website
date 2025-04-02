@@ -1,5 +1,6 @@
 import styles from "@/app/page.module.css"
 import localStyles from "./page.module.css"
+import Link from "next/link"
 
 export default function Content () {
     return (
@@ -7,7 +8,7 @@ export default function Content () {
             <h1 className={styles.BigHeading}>Lernstoff</h1>
             <div className={[styles.Textblock, localStyles.Important].join(" ")}>
                 Aktuell ist das Lernstoffarchiv bissl kaputt. Wir arbeiten mit Hochdruck daran, es wieder ins Netz zu bekommen.
-                Wenn ihr Altklausuren benötigt, kommt zu usneren <a href="/">Präsenzzetien</a> vorbei und sprecht uns an!
+                Wenn ihr Altklausuren benötigt, kommt zu usneren <Link href="/">Präsenzzetien</Link> vorbei und sprecht uns an!
             </div>
             <div className={styles.Textblock}>
                 Im Lernstoffarchiv stehen dir Altklausuren, Prüfungsprotokolle und andere von Studenten erstellte Lernmaterialien
@@ -43,7 +44,7 @@ export default function Content () {
             <div className={styles.Textblock}>
                 Dies kannst du per Mail mit dem Betreff Lernstoff <a href="mailto:fsgi@uni-muenster.de">fsgi@uni-muenster.de</a> tun,
                 oder uns die Dokumente persönlich im Fachschaftsraum (024im GEO1) vorbeibringen. Nutze hierzu
-                die <a href="/">Präsenzzeiten</a>.
+                die <Link href="/">Präsenzzeiten</Link>.
             </div>
             <div className={styles.Textblock}> 
                 Solltet Ihr Fragen, Probleme oder Anregungen zum Thema Altklausuren und unserer Lernstoff-Cloud haben,

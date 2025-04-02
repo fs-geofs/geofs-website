@@ -1,4 +1,5 @@
 import styles from "@/app/page.module.css"
+import Link from "next/link"
 
 export default function Content() {
     return (
@@ -68,7 +69,7 @@ export default function Content() {
                 dem Betreff „SoftwarePraktikum2020“ schickt. Zusätzlich gelangt ihr über
                 diesen <a href="https://zivmattermost.uni-muenster.de/signup_user_complete/?id=fkfj1iccjjgk38grjiymx7t6ay">Link</a> in
                 den Mattermost Channel des Softwarepraktikums 2020, einfach mit der Unikennung anmelden.
-                Ansonsten kommt gerne mit Fragen auf uns zu, per Mail oder zu den <a href="/">Präsenzzeiten</a>!
+                Ansonsten kommt gerne mit Fragen auf uns zu, per Mail oder zu den <Link href="/">Präsenzzeiten</Link>!
             </div>
             <div className={styles.Textblock}>
                 Leider konnten wir nicht erwirken, dass Credit Points für den Kurs anrechenbar sind.

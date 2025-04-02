@@ -1,4 +1,5 @@
 import styles from "@/app/page.module.css"
+import Link from "next/link"
 
 export default function Content() {
     return (
@@ -67,8 +68,8 @@ export default function Content() {
                 </li>
                 <li>
                     Bei fast allen Fragen ist auch die <em className={styles.bold}>Fachschaft</em> ein guter Ansprechpartner.
-                    Ihr könnt uns per Mail erreichen oder auch während der <a href="/">Präsenzzeiten</a> vorbeischauen.
-                    Unter <a href="/wp/fachschaft/kontakt">Kontakt</a> findet ihr weitere Informationen.
+                    Ihr könnt uns per Mail erreichen oder auch während der <Link href="/">Präsenzzeiten</Link> vorbeischauen.
+                    Unter <Link href="/wp/fachschaft/kontakt">Kontakt</Link> findet ihr weitere Informationen.
                 </li>
                 <li>
                     Auch die <em className={styles.bold}>Uni Münster</em> bietet verschiedene Möglichkeitaen, sich beraten zu lassen.
