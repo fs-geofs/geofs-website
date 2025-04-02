@@ -29,7 +29,7 @@ export default async function Content() {
                 Am {rollen.wahldatum} ist der aktuelle Fachschaftsrat gewählt worden. Das Protokoll
                 gibt’s <a href={rollen.protokoll}>hier</a>.
             </h3>
-            {rollen.roles.map(role => <Role role={role.role} names={role.names} description={role.description} key={role} />)}
+            {rollen.roles.map(role => <Role role={role.role} names={role.names} description={role.description} key={role.role} />)}
         </>
     )
 }
