@@ -16,7 +16,7 @@ export default function Content() {
                 Wir würden uns sehr freuen, viele von euch dort zu treffen :-).
             </div>
             <div className="Textblock">
-                Wir haben für euch eine Ersti-Info erstellt. Diese könnt ihr euch <a href="/survival.pdf">hier</a> herunterladen.
+                Wir haben für euch eine Ersti-Info erstellt. Diese könnt ihr euch <a href="/erstiheft">hier</a> herunterladen.
             </div>
             <h2 className={styles.SmallHeading}>Stundenplan</h2>
             <em >
