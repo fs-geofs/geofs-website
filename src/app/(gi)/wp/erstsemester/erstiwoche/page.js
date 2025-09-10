@@ -42,12 +42,6 @@ export default async function Content() {
                 legen wir euch die Teilnahme aber sehr ans Herz :-)
             </div>
             <h2 className={styles.SmallHeading}>Ablaufplan Geoinformatik</h2>
-            <div className={styles.Textblock}>
-                Momentan planen wir die Ersti-Woche als Präsenz-Veranstaltung. Da sich die Corona-Lage kurzfristig ändern kann
-                und wir uns an die aktuellen Verordnungen halten müssen, kann es sein, dass wir die Ersti-Woche in ein Hybrid-
-                oder Online Format abändern müssen. Checkt bitte regelmäßig diese Homepage, damit ihr wichtige Infos dazu nicht
-                verpasst!
-            </div>
             <Schedule schedule={erstiwoche.schedule} />
             <h2 className={styles.SmallHeading}>Adresskürzel, und was sich dahinter verbirgt</h2>
             <Locations locations={erstiwoche.locations} />
