@@ -5,10 +5,6 @@ export default function Content () {
     return (
         <>
             <h1 className={styles.BigHeading}>Lernstoff</h1>
-            <div className={[styles.Textblock, localStyles.Important].join(" ")}>
-                Aktuell ist das Lernstoffarchiv bissl kaputt. Wir arbeiten mit Hochdruck daran, es wieder ins Netz zu bekommen.
-                Wenn ihr Altklausuren benötigt, kommt zu usneren <a href="/">Präsenzzetien</a> vorbei und sprecht uns an!
-            </div>
             <div className={styles.Textblock}>
                 Im Lernstoffarchiv stehen dir Altklausuren, Prüfungsprotokolle und andere von Studenten erstellte Lernmaterialien
                 zum Download zur Verfügung.
@@ -29,7 +25,9 @@ export default function Content () {
                 Gegenleistung von dir. Stell deinen Mitstudierenden alles, was in deinen Augen anderen beim Lernen helfen
                 könnte, zur Verfügung.
             </div>
-            
+            <div className={styles.Textblock}>
+                Das Lernstoffarchiv ist aktuell passwortgeschützt. Das Passwort kannst du bei uns im Fachschaftsraum (024 im GEO1), per WhatsApp oder Mail erfragen. Oder frag vielleicht einfach mal deine Kommilitonen, ob dies schon kennen.
+            </div>
             <div className={styles.Textblock}>
                 <h2 className={styles.SmallHeading}><a href="/lernstoff">Direktlink ins Archiv</a></h2>
             </div>
