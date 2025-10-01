@@ -1,10 +1,9 @@
 import styles from "@/app/page.module.css"
 import localStyle from "./newspage.module.css"
-
-import DOMPurify from "isomorphic-dompurify"
+import sanitizeHtml from "sanitize-html"
 import FetchError from "@/app/components/error_fetching"
 
-export default async function Newspage({searchParams, newsEndpoint}) {
+export default async function Newspage({ searchParams, newsEndpoint }) {
     let { page } = await searchParams
     if (!page) {
         page = "0"
@@ -35,13 +34,13 @@ export default async function Newspage({searchParams, newsEndpoint}) {
             next_page = data.next
             prev_page = data.prev
             entries.map(entry => {
-                const html_to_insert = DOMPurify.sanitize(
-                    entry.content
-                        .replaceAll("<h1>", `<h1 class=${styles.BigHeading}>`)  // apply h1 formatting
-                        .replaceAll("<h2>", `<h1 class=${styles.SmallHeading}>`) // apply h2 formatting
-                        .replaceAll("<h3>", `<h1 class=${styles.VerySmallHeading}>`) //apply h3 formatting
-                        .replaceAll("<div>", `<div class=${styles.Textblock}>`) // apply Textbox formatting to divs
-                )
+                const dirty_html = entry.content
+                    .replaceAll("<h1>", `<h1 class=${styles.BigHeading}>`)  // apply h1 formatting
+                    .replaceAll("<h2>", `<h2 class=${styles.SmallHeading}>`) // apply h2 formatting
+                    .replaceAll("<h3>", `<h3 class=${styles.VerySmallHeading}>`) //apply h3 formatting
+                    .replaceAll("<div>", `<div class=${styles.Textblock}>`) // apply Textbox formatting to divs
+                const html_to_insert = sanitizeHtml(dirty_html)
+
                 blog_entries.push(
                     <div className={localStyle.Blogpost} key={entry.id}>
                         <h4>{
@@ -68,9 +67,9 @@ export default async function Newspage({searchParams, newsEndpoint}) {
 
     return (
         <>
-            <NavButtons prev_page={prev_page} next_page={next_page}/>
+            <NavButtons prev_page={prev_page} next_page={next_page} />
             {blog_entries.map(entry => entry)}
-            <NavButtons prev_page={prev_page} next_page={next_page}/>
+            <NavButtons prev_page={prev_page} next_page={next_page} />
         </>
     )
 }
