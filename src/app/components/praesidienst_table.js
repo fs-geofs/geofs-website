@@ -82,7 +82,7 @@ export default async function Praesidienste({ praesidieste_backend_url }) {
         <tbody>
           {
             times.map(time =>
-              <tr>
+              <tr key={time}>
                 <td>{time} - {time + 1}</td>
                 {
                   tage.map(
