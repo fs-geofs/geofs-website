@@ -7,11 +7,11 @@
     "windev": "set BACKEND_URL=localhost&& set BACKEND_PORT=5000&& set PROTOKOLL_ENDPOINT=https://giv-geofs.uni-muenster.de/protokolle/&& next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "exlint ."
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "next": "^16.1.3",
+    "next": "^16.1.6",
     "react": "^18",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18",
