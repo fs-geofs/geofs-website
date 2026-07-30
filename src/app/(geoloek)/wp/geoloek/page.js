@@ -16,13 +16,13 @@ export default function Page() {
             </div >
             <div className={styles.Textblock}>
                 Wenn ihr mitarbeiten, diskutieren oder einfach mal reinschnuppern wollt, kommt doch einfach zu unseren
-                Sitzungen, Mittwoch 18 Uhr s.t. in Raum 513. Falls ihr dann keine Zeit habt, kommt zu 
+                Sitzungen, Mittwoch 18 Uhr s.t. im Lernatelier (R.10). Falls ihr dann keine Zeit habt, kommt zu 
                 den <a href="/wp/geoloek/praesenzzeiten">Präsenzzeiten</a> in
                 den Fachschaftsraum, ruft an oder schreibt eine <a href="/wp/geoloek/kontakt">E-Mail</a>.
             </div>
-            <img src={`/website-api/foto-geoloek`} alt="Fachschaft GeoLoek vor dem Geo-Gebäude" style={{ maxWidth: "100%", height: "auto" }}/>
+            <img src={`/website-api/foto-geoloek`} alt="Foto der Fachschaft GeoLoek vor dem Geo-Gebäude" style={{ maxWidth: "100%", height: "auto" }}/>
             <div className={styles.Textblock}>
-                <i>Eure Fachschaft GeoLök (WiSe 2024/25)</i>
+                <i>Eure Fachschaft GeoLök (SoSe 2026)</i>
             </div>
         </>
     )
