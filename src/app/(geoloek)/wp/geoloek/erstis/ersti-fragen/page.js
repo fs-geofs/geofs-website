@@ -17,7 +17,7 @@ export default function Page() {
                     <li>Urlaub. Der Stress kommt schon noch von alleine</li>
                     <li>Zimmer suchen</li>
                     <li>Münster kennenlernen</li>
-                    <li>Fahrrad und Regenklamotten besorgen!!!11!1!</li> 
+                    <li>Fahrrad und Regenklamotten besorgen!!!!!!!!</li> 
                 </ul>
             </div>
             <h2 className={styles.SmallHeading}>Darf ich Sie mit Du anreden?</h2>
