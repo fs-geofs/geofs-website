@@ -31,7 +31,7 @@ export default async function Page() {
                 Spaß dabei. Wer nicht mitfährt, ist selber Schuld, denn es wird jede Menge gefeiert!
             </div>
             <div className={styles.Textblock}>
-                Der Unkostenbeitrag beträgt (voraussichtlich) <strong>{erstiwochenende.kosten}€</strong> (inkl. Fahrtkosten, Verpflegung, Unterbringung in Mehrbettzimmern)
+                Der Unkostenbeitrag beträgt (voraussichtlich) <strong>{erstiwochenende.kosten}</strong> (inkl. Fahrtkosten, Verpflegung, Unterbringung in Mehrbettzimmern)
                 und ist in bar und möglichst passend bei der Anmeldung während des Geobrunches zu zahlen. Dies ist die einzige
                 Anmeldegelegenheit! Wer zu diesem Zeitpunkt verhindert ist, kann sich leider nicht von einer anderen Person vertreten
                 lassen. Die Anmeldung ist verbindlich. Wenn eine angemeldete Person an der Fahrt nicht mehr teilnehmen kann/will,

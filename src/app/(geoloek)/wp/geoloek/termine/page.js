@@ -26,7 +26,7 @@ export default async function Page() {
                 sonstigen Veranstaltungen der Fachschaft findet ihr hier.
             </div>
             <div className={styles.Textblock}>
-                Termine der Facschaft und des Fachbereichs:
+                Termine der Fachschaft und des Fachbereichs:
             </div>
             <div className={styles.Textblock}>
                 {successFetching ? <Terminliste terminliste={termine.fstermine} /> : <FetchError />}
